@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+pandas
+tqdm
+lxml
+mysql-connector-python
+python-dotenv
