@@ -1,0 +1,16 @@
+# Bỏ cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Bỏ môi trường ảo (nếu có)
+venv/
+.env/
+
+# Bỏ log + output
+logs/
+data_output/
+
+# Bỏ thư mục Windows ẩn
+Thumbs.db
