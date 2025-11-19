@@ -1,8 +1,14 @@
 # pipeline.py
-import sys
+
+import sys, os
+
+# Thêm ROOT vào PYTHONPATH
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from extract.extract_service import run_extract
 from transform.transform_service import run_transform
 from load.load_service import run_load
+
 
 def main():
     print("=== PIPELINE START ===")
@@ -30,6 +36,7 @@ def main():
 
     print("\n=== PIPELINE FINISHED SUCCESSFULLY ===")
     sys.exit(0)
+
 
 if __name__ == "__main__":
     main()
