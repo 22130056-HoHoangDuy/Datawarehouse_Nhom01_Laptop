@@ -1,0 +1,3 @@
+﻿brand,product_name,price,currency,source,url,timestamp,sold_count,crawl_date,crawl_hour
+['MACBOOK'],Laptop MacBook Pro 14 inch M5 24GB/512GB,46890000,VND,thegioididong,https://www.thegioididong.com/laptop/macbook-pro-14-inch-m5-24gb-512gb,2025-11-19 05:54:08,,2025-11-19,5
+['MACBOOK'],Laptop MacBook Air 13 inch M2 16GB/256GB,19690000,VND,thegioididong,https://www.thegioididong.com/laptop/apple-macbook-air-m2-2022-16gb-256gb,2025-11-19 05:54:28,104000.0,2025-11-19,5
