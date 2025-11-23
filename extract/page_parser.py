@@ -75,6 +75,41 @@ def parse_product_page(url, source):
         if price_el:
             price = parse_price(price_el.get_text(strip=True))
 
+    # Fallback: try to extract price from meta tags, data-* attributes or inline JSON/script text
+    if not price:
+        # meta tags
+        try:
+            m = soup.find('meta', property='product:price:amount') or soup.find('meta', attrs={'itemprop': 'price'})
+            if m and m.get('content'):
+                price = parse_price(m['content'])
+        except Exception:
+            pass
+
+    if not price:
+        try:
+            el = soup.find(attrs={"data-price": True})
+            if el:
+                price = parse_price(el.get('data-price'))
+        except Exception:
+            pass
+
+    if not price:
+        # search in all script tags for a price pattern (e.g. "price":12345000 or "price":"12.345.000")
+        try:
+            import re
+            scripts = soup.find_all('script')
+            txt = "\n".join([s.string or "" for s in scripts])
+            m = re.search(r'"price"\s*:\s*\"?([\d\.,]+)\"?', txt)
+            if m:
+                price = parse_price(m.group(1))
+            else:
+                # also try without quotes: price: 12345
+                m2 = re.search(r'price\s*[:=]\s*([\d\.,]+)', txt)
+                if m2:
+                    price = parse_price(m2.group(1))
+        except Exception:
+            pass
+
     # If price/JSON-LD missing and Playwright renderer is available, try rendering the product page
     if (not price or not jd) and PAGE_USE_RENDERER and "thegioididong" in url:
         try:
