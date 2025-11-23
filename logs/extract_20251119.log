@@ -1,0 +1,12 @@
+2025-11-19 05:52:25,032 - INFO - === BẮT ĐẦU QUÁ TRÌNH EXTRACT ===
+2025-11-19 05:52:25,032 - INFO - Đang crawl nguồn: cellphones
+2025-11-19 05:52:27,295 - INFO - [cellphones] Found 53 URLs
+2025-11-19 05:53:39,284 - INFO - Đang crawl nguồn: thegioididong
+2025-11-19 05:53:43,378 - INFO - [thegioididong] Found 120 URLs
+2025-11-19 05:53:58,424 - WARNING - Lỗi GET https://www.thegioididong.com/newsitemap/sitemap-product-2021-9: HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)
+2025-11-19 05:53:58,424 - WARNING - Lỗi GET https://www.thegioididong.com/newsitemap/sitemap-product-2023-7: HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)
+2025-11-19 05:53:58,424 - WARNING - Lỗi GET https://www.thegioididong.com/newsitemap/sitemap-product-2023-3: HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)
+2025-11-19 05:53:58,439 - WARNING - Lỗi GET https://www.thegioididong.com/newsitemap/sitemap-product-2025-7: HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)
+2025-11-19 05:54:54,745 - INFO - Đang crawl nguồn: gearvn
+2025-11-19 05:54:58,763 - INFO - [gearvn] Found 21 URLs
+2025-11-19 05:55:09,563 - INFO - Hoàn tất EXTRACT, tổng 2 sản phẩm → data_output\raw_laptop_20251119_055509.csv
