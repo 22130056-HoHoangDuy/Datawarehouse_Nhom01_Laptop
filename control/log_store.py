@@ -1,132 +1,105 @@
-import os
-import sqlite3
+# log_store.py (MySQL version)
+# Ghi log ETL vào MySQL thay vì SQLite
+
+import pymysql
 from datetime import datetime
+import os
+from dotenv import load_dotenv
+from pathlib import Path
 
-# === Database path ===
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(BASE_DIR, "control.db")
+# Load .env
+BASE_DIR = Path(__file__).resolve().parents[1]
+env_path = BASE_DIR / ".env"
+load_dotenv(env_path)
 
-# === SQL: create process log table ===
-CREATE_TABLE_SQL = """
-CREATE TABLE IF NOT EXISTS process_log (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    process_name TEXT NOT NULL,
-    status TEXT NOT NULL,
-    started_at TEXT NOT NULL,
-    ended_at TEXT,
-    message TEXT
-);
-"""
+DB_CONFIG = {
+    "host": os.getenv("DB_CONTROL_HOST", "127.0.0.1"),
+    "user": os.getenv("DB_CONTROL_USER", "root"),
+    "password": os.getenv("DB_CONTROL_PASS", ""),
+    "database": os.getenv("DB_CONTROL_NAME", "control"),
+    "port": int(os.getenv("DB_CONTROL_PORT", 3306)),
+}
 
-
-def _get_conn():
-    """Ensure DB exists and return connection."""
-    os.makedirs(BASE_DIR, exist_ok=True)
-    conn = sqlite3.connect(DB_PATH)
-    conn.execute(CREATE_TABLE_SQL)
-    conn.commit()
-    return conn
-
-
-
-# START PROCESS
-def start_process(process_name, message="Starting"):
-    """
-    Ghi log bắt đầu một process.
-    Return: id của log row.
-    """
-    conn = _get_conn()
-    cur = conn.cursor()
-
-    started_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    cur.execute(
-        """
-        INSERT INTO process_log (process_name, status, started_at, message)
-        VALUES (?, 'running', ?, ?)
-        """,
-        (process_name, started_at, message)
+def connect():
+    return pymysql.connect(
+        host=DB_CONFIG["host"],
+        user=DB_CONFIG["user"],
+        password=DB_CONFIG["password"],
+        database=DB_CONFIG["database"],
+        port=DB_CONFIG["port"],
+        charset="utf8mb4",
+        cursorclass=pymysql.cursors.DictCursor,
+        autocommit=True
     )
-    log_id = cur.lastrowid
 
-    conn.commit()
+
+# ================================
+# Hàm ghi log ETL
+# ================================
+
+def start_process(process_name: str, message: str = None) -> int:
+    """Tạo một log mới với status = 'running'."""
+    conn = connect()
+    with conn.cursor() as cur:
+        sql = """
+            INSERT INTO process_logs (process_name, status, message, start_time)
+            VALUES (%s, 'running', %s, %s)
+        """
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        cur.execute(sql, (process_name, message, now))
+        cur.execute("SELECT LAST_INSERT_ID() AS id")
+        log_id = cur.fetchone()["id"]
     conn.close()
     return log_id
 
 
-
-#  END PROCESS
-
-def end_process(log_id, status, message=None):
-    """
-    Update trạng thái khi process kết thúc.
-    status = 'success' hoặc 'fail'
-    """
-    conn = _get_conn()
-    cur = conn.cursor()
-
-    ended_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-    cur.execute(
+def log_success(log_id: int, message: str = None):
+    """Update một log thành công."""
+    conn = connect()
+    with conn.cursor() as cur:
+        sql = """
+            UPDATE process_logs
+            SET status='success',
+                message=%s,
+                end_time=%s
+            WHERE id=%s
         """
-        UPDATE process_log
-        SET status = ?, ended_at = ?, message = ?
-        WHERE id = ?
-        """,
-        (status, ended_at, message, log_id)
-    )
-
-    conn.commit()
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        cur.execute(sql, (message, now, log_id))
     conn.close()
 
 
-
-#  GET LATEST STATUS
-def get_latest_status(process_name):
-    """
-    Lấy status mới nhất của một process: success/fail/running/None
-    """
-    conn = _get_conn()
-    cur = conn.cursor()
-
-    cur.execute(
+def log_fail(log_id: int, message: str = None):
+    """Update một log thất bại."""
+    conn = connect()
+    with conn.cursor() as cur:
+        sql = """
+            UPDATE process_logs
+            SET status='failed',
+                message=%s,
+                end_time=%s
+            WHERE id=%s
         """
-        SELECT status
-        FROM process_log
-        WHERE process_name = ?
-        ORDER BY id DESC
-        LIMIT 1
-        """,
-        (process_name,)
-    )
-    row = cur.fetchone()
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        cur.execute(sql, (message, now, log_id))
     conn.close()
 
-    return row[0] if row else None
 
+def get_latest_status(process_name: str) -> str:
+    """Lấy status mới nhất của một process."""
+    conn = connect()
+    with conn.cursor() as cur:
+        sql = """
+            SELECT status
+            FROM process_logs
+            WHERE process_name = %s
+            ORDER BY id DESC
+            LIMIT 1
+        """
+        cur.execute(sql, (process_name,))
+        row = cur.fetchone()
+    conn.close()
 
-
-# CHECK IF CURRENT PROCESS CAN RUN
-
-def can_run(process_name, required_previous):
-    """
-    Kiểm tra process hiện tại có được phép chạy hay không.
-
-    Example:
-        can_run("transform", "extract")
-        can_run("load", "transform")
-    """
-    prev_status = get_latest_status(required_previous)
-
-    if prev_status == "success":
-        return True
-    return False
-
-
-
-# HELPERS FOR ETL
-def log_success(log_id, message="Completed"):
-    end_process(log_id, "success", message)
-
-
-def log_fail(log_id, message="Failed"):
-    end_process(log_id, "fail", message)
+    if not row:
+        return None
+    return row["status"]
