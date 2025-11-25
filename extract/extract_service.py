@@ -3,7 +3,20 @@ import os, logging, smtplib
 import pandas as pd
 from datetime import datetime
 from extract.crawler import harvest_site, SITES
+# Try to load local hardcoded config (optional)
 from email.mime.text import MIMEText
+try:
+    from .local_config import DEFAULT_SMTP as LOCAL_DEFAULT_SMTP
+except Exception:
+    LOCAL_DEFAULT_SMTP = None
+try:
+    from .log_store import start_run, update_run
+except Exception:
+    # If import fails, define no-op fallbacks
+    def start_run(attempts=0):
+        return None
+    def update_run(run_id, status, message=None, csv_path=None, row_count=None):
+        return None
 
 OUT_DIR = "data_output"
 LOG_DIR = "logs"
@@ -46,8 +59,21 @@ def run_extract(max_retries=3, email_notify=False, email_config=None):
     # Support a test mode to force failure (useful to validate retry logic)
     force_fail = os.environ.get('EXTRACT_FORCE_FAIL', '').lower() in ('1', 'true', 'yes')
 
+    # If email_notify requested but no explicit config provided, fall back to local config
+    if email_notify and (email_config is None) and LOCAL_DEFAULT_SMTP:
+        email_config = LOCAL_DEFAULT_SMTP
+
+    # record run start in DB (if available)
+    run_id = start_run(attempts=0)
+
     while True:
         attempts_done += 1
+        # update attempts in DB if possible
+        try:
+            if run_id:
+                update_run(run_id, status='running', message=f'Attempt {attempts_done}')
+        except Exception:
+            pass
         logging.info(f"=== BẮT ĐẦU QUÁ TRÌNH EXTRACT (thử lần {attempts_done}) ===")
         all_data = []
         # Honor optional environment variable to restrict crawling to a single site
@@ -93,6 +119,33 @@ def run_extract(max_retries=3, email_notify=False, email_config=None):
             csv_path = os.path.join(OUT_DIR, f"raw_laptop_{timestamp}.csv")
             df.to_csv(csv_path, index=False, encoding="utf-8-sig")
             logging.info(f"Hoàn tất EXTRACT, tổng {len(df)} sản phẩm → {csv_path}")
+            # If requested, send a success notification email using the existing helper
+            if email_notify and email_config:
+                try:
+                    subject = "[Extract Pipeline] Hoàn tất extract"
+                    body = f"Pipeline extract hoàn tất thành công. Tổng {len(df)} sản phẩm. File: {csv_path}"
+                    send_error_email(subject, body,
+                                     email_config['to_email'],
+                                     email_config['smtp_server'],
+                                     email_config['smtp_port'],
+                                     email_config['smtp_user'],
+                                     email_config['smtp_pass'])
+                    logging.info(f"Đã gửi email thông báo hoàn tất tới {email_config['to_email']}")
+                except Exception as e:
+                    logging.error(f"Lỗi khi gửi email hoàn tất: {e}")
+            # update DB as success
+            try:
+                if run_id:
+                    update_run(run_id, status='success', message='Extract completed', csv_path=csv_path, row_count=len(df))
+                else:
+                    # fallback insert
+                    try:
+                        from .log_store import insert_final
+                        insert_final(status='success', attempts=attempts_done, message='Extract completed', csv_path=csv_path, row_count=len(df))
+                    except Exception:
+                        pass
+            except Exception:
+                pass
             return csv_path
         except Exception as e:
             logging.error(f"Lỗi ghi file CSV (thử lần {attempts_done}): {e}")
