@@ -1,10 +1,9 @@
 @echo off
-REM === Chạy pipeline ETL laptop ===
 cd /d "%~dp0\.."
 
-echo [%date% %time%] === BẮT ĐẦU CHU TRÌNH === >> logs\automation.log
+echo [%date% %time%] === START === >> logs\automation.log
 
-py automation\pipline.py
+py automation\pipeline.py
 
-echo [%date% %time%] === KẾT THÚC CHU TRÌNH === >> logs\automation.log
+echo [%date% %time%] === END === >> logs\automation.log
 exit
