@@ -1,10 +1,8 @@
 # extract_service.py
 import os
-import json
 import logging
 import pandas as pd
 from datetime import datetime
-from urllib.parse import urlparse
 from extract.sitemap_utils import fetch_sitemap_urls
 from extract.page_parser import parse_product_page
 
@@ -24,60 +22,55 @@ if not logger.handlers:
     sh.setFormatter(fmt)
     logger.addHandler(sh)
 
-# ====== CHỈ LẤY LINK SẢN PHẨM ==============
+
+# ==============================
+#      URL FILTER (CHUẨN)
+# ==============================
 PRODUCT_KEYWORDS = [
-    "/laptop/",
-    "/macbook",
-    "-laptop-",
-    "-gaming-",
-    "-notebook-",
+    "/laptop/",          # link sản phẩm chính
 ]
 
-# ====== LOẠI BỎ TẤT CẢ CATEGORY / HỎI ĐÁP ======
 BLOCK_KEYWORDS = [
     "/hoi-dap/",
     "/tin-tuc/",
-    "/laptop-",
-    "/laptop#",
-    "/laptop-ky-thuat",
-    "/laptop-full-hd",
-    "/laptop-gia-re",
-    "/laptop-core",
-    "/laptop?g=",
+    "/khuyen-mai/",
+    "/tra-gop/",
+    "/#",
+    "?",
 ]
 
 def is_valid_product_url(url: str) -> bool:
-    """Chỉ giữ lại link sản phẩm laptop thật"""
-    if not url or not isinstance(url, str):
+    """Chỉ lấy link sản phẩm thật"""
+    if not isinstance(url, str):
         return False
 
     url = url.lower()
 
-    # Loại bỏ link có query hoặc anchor
-    if "#" in url or "?" in url:
+    # Loại bỏ query / anchor
+    if "?" in url or "#" in url:
         return False
 
+    # Không lấy các page hỏi đáp / tin tức
     for bad in BLOCK_KEYWORDS:
         if bad in url:
             return False
 
-    for kw in PRODUCT_KEYWORDS:
-        if kw in url:
-            return True
-
-    return False
+    # Chỉ chấp nhận link dạng /laptop/xxx
+    return url.startswith("https://www.thegioididong.com/laptop/")
 
 
+# ==============================
+#      CRAWL WEBSITE
+# ==============================
 def extract_thegioididong():
-    logger.info("Đang crawl nguồn: thegioididong")
+    logger.info("Đang crawl nguồn: thegioidididong")
 
     urls = fetch_sitemap_urls("https://www.thegioididong.com/", logger)
 
-    # Lọc lấy link hợp lệ
+    # Lọc chính xác URL sản phẩm laptop
     valid_urls = [u for u in urls if is_valid_product_url(u)]
-    logger.info(f"[thegioididong] Tổng URL hợp lệ: {len(valid_urls)}")
+    logger.info(f"[thegioidididong] Tổng URL hợp lệ: {len(valid_urls)}")
 
-    # Parse từng URL sản phẩm
     data = []
     for url in valid_urls:
         item = parse_product_page(url, "thegioididong")
@@ -87,6 +80,9 @@ def extract_thegioididong():
     return data
 
 
+# ==============================
+#      RUN EXTRACT
+# ==============================
 def run_extract(return_output_path=False):
     logger.info("=== BẮT ĐẦU QUÁ TRÌNH EXTRACT ===")
 

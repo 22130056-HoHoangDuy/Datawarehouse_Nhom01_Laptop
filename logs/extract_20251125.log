@@ -6093,3 +6093,7 @@ Call log:
 2025-11-25 16:50:49,978 - INFO - Đang crawl nguồn: thegioididong
 2025-11-25 16:50:52,361 - INFO - [thegioididong] Tổng URL hợp lệ: 0
 2025-11-25 16:50:52,362 - ERROR - KHÔNG có dữ liệu hợp lệ sau khi crawl!
+2025-11-25 16:53:48,088 - INFO - === BẮT ĐẦU QUÁ TRÌNH EXTRACT ===
+2025-11-25 16:53:48,088 - INFO - Đang crawl nguồn: thegioididong
+2025-11-25 16:53:50,021 - INFO - [thegioididong] Tổng URL hợp lệ: 0
+2025-11-25 16:53:50,022 - ERROR - KHÔNG có dữ liệu hợp lệ sau khi crawl!
