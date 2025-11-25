@@ -12,9 +12,28 @@ from extract import crawler
 
 def fake_harvest_site(site):
     print(f"fake_harvest_site called for site={site}")
+    now = time.strftime('%Y-%m-%d %H:%M:%S')
     return [
-        {'url': f'https://example.com/{site}/1', 'title': 'Test Product 1', 'price': 100},
-        {'url': f'https://example.com/{site}/2', 'title': 'Test Product 2', 'price': 200},
+        {
+            'url': f'https://example.com/{site}/1',
+            'brand': 'TestBrand',
+            'product_name': 'Test Product 1',
+            'price': 100,
+            'currency': 'VND',
+            'source': site,
+            'timestamp': now,
+            'sold_count': '10'
+        },
+        {
+            'url': f'https://example.com/{site}/2',
+            'brand': 'TestBrand',
+            'product_name': 'Test Product 2',
+            'price': 200,
+            'currency': 'VND',
+            'source': site,
+            'timestamp': now,
+            'sold_count': '5'
+        },
     ]
 
 # Apply monkeypatch

@@ -199,3 +199,15 @@ Call log:
 2025-11-25 10:24:03,198 - ERROR - KHÔNG lấy được dữ liệu (thử lần 2)!!!
 2025-11-25 10:24:03,198 - ERROR - Đạt giới hạn 2 lần thử, dừng và báo lỗi.
 2025-11-25 10:24:06,177 - INFO - Đã gửi email thông báo lỗi tới tungekko113@gmail.com
+2025-11-25 10:37:01,796 - INFO - === BẮT ĐẦU QUÁ TRÌNH EXTRACT (thử lần 1) ===
+2025-11-25 10:37:01,796 - INFO - Đang crawl nguồn: thegioididong
+2025-11-25 10:37:01,796 - INFO - Hoàn tất crawl thegioididong: tìm được 2 URLs, thời gian 0.0s
+2025-11-25 10:37:01,797 - INFO - Hoàn tất EXTRACT, tổng 2 sản phẩm → data_output\raw_laptop_20251125_103701.csv
+2025-11-25 10:37:04,024 - INFO - Đã gửi email thông báo lỗi tới tungekko113@gmail.com
+2025-11-25 10:37:04,024 - INFO - Đã gửi email thông báo hoàn tất tới tungekko113@gmail.com
+2025-11-25 10:37:33,145 - INFO - === BẮT ĐẦU QUÁ TRÌNH EXTRACT (thử lần 1) ===
+2025-11-25 10:37:33,145 - INFO - Đang crawl nguồn: thegioididong
+2025-11-25 10:37:33,146 - INFO - Hoàn tất crawl thegioididong: tìm được 2 URLs, thời gian 0.0s
+2025-11-25 10:37:33,151 - INFO - Hoàn tất EXTRACT, tổng 2 sản phẩm → data_output\raw_laptop_20251125_103733.csv
+2025-11-25 10:37:36,176 - INFO - Đã gửi email thông báo lỗi tới tungekko113@gmail.com
+2025-11-25 10:37:36,183 - INFO - Đã gửi email thông báo hoàn tất tới tungekko113@gmail.com
