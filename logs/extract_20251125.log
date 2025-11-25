@@ -1,0 +1,451 @@
+2025-11-25 10:52:37,513 - INFO - === BẮT ĐẦU QUÁ TRÌNH EXTRACT (thử lần 1) ===
+2025-11-25 10:52:37,513 - INFO - Đang crawl nguồn: thegioididong
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap contains 191 loc entries
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2014-3?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2015-12?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-2?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-3?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-10?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-11?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-4?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-8?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-9?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-10?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-11?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-12?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-1?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-2?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-3?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-4?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-9?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-11?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-12?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2019-1?page=1
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Using single fragment seed page: https://www.thegioididong.com/laptop#c=44&o=13&pi=21
+2025-11-25 10:52:39,459 - INFO - [thegioididong] Fetching category page 1/1: https://www.thegioididong.com/laptop#c=44&o=13&pi=21
+2025-11-25 10:52:48,369 - INFO - [thegioididong] Page 1 anchors found: 1806
+2025-11-25 10:52:48,389 - INFO - [thegioididong] Added 575 candidate URLs from page 1
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Found 575 URLs
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/acer-aspire-lite-14-al14-71p-55p9-i5-13500h-nxd7usv001
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/hp-probook-4-g1i-16-ultra-5-225h-bq5d8pt
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/hp-probook-4-g1i-16-ultra-5-225u-bq5d4pt
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/dell-inspiron-15-3530-i7-n5i7216w1
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/asus-gaming-v16-v3607vu-core-5-rp192w
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/asus-rog-zephyrus-g16gu605cm-ultra-9-qr078w
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/macbook-pro-14-inch-m5-24gb-1tb
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-180-hz
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop#hmenuid21
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/lenovo-thinkpad-e14-gen-7-ultra-5-225u-21sx005qvn
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/msi-prestige-14-ai-studio-c1veg-ultra-7-056vn
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/acer-aspire-lite-15-al15-42p-r8e6-r5-7430u-nx-d34sv-001
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/hp-pavilion-15-eg3095tu-i5-8c5l6pa-16g
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-card-tich-hop
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-man-hinh-gap-360-do
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/acer-swift-lite-14-ai-sfl14-51m-56hs-ultra-5-nxj1hsv002
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop#hmenuid8
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/lenovo-gaming-loq-15irx9-i7-13650hx-83dv01alvn
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/dell-g15-5530-i9-i9hx161w11gr4060
+2025-11-25 10:52:48,390 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/lenovo-ideapad-slim-5-oled-14irh10r-core-5-83j0006cvn
+2025-11-25 10:53:26,412 - WARNING - Playwright render failed for https://www.thegioididong.com/hoi-dap/top-10-laptop-gaming-duoi-35-trieu-ban-chay-nhat-the-gioi-1407251: Page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "https://www.thegioididong.com/hoi-dap/top-10-laptop-gaming-duoi-35-trieu-ban-chay-nhat-the-gioi-1407251", waiting until "networkidle"
+
+2025-11-25 10:53:30,224 - WARNING - Playwright render failed for https://www.thegioididong.com/hoi-dap/top-4-laptop-gaming-cau-hinh-cuc-chien-duoi-40-trieu-dang-1377060: Page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "https://www.thegioididong.com/hoi-dap/top-4-laptop-gaming-cau-hinh-cuc-chien-duoi-40-trieu-dang-1377060", waiting until "networkidle"
+
+2025-11-25 10:53:54,356 - WARNING - Playwright render failed for https://www.thegioididong.com/hoi-dap/cach-chon-laptop-de-su-dung-thiet-ke-do-hoa-va-ky-1022621: Page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "https://www.thegioididong.com/hoi-dap/cach-chon-laptop-de-su-dung-thiet-ke-do-hoa-va-ky-1022621", waiting until "networkidle"
+
+2025-11-25 10:54:01,865 - WARNING - Playwright render failed for https://www.thegioididong.com/hoi-dap/top-5-laptop-danh-cho-van-phong-co-ban-979828: Page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "https://www.thegioididong.com/hoi-dap/top-5-laptop-danh-cho-van-phong-co-ban-979828", waiting until "networkidle"
+
+2025-11-25 10:54:18,397 - WARNING - Playwright render failed for https://www.thegioididong.com/hoi-dap/top-5-laptop-gon-nhe-de-di-chuyen-979855: Page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "https://www.thegioididong.com/hoi-dap/top-5-laptop-gon-nhe-de-di-chuyen-979855", waiting until "networkidle"
+
+2025-11-25 10:54:38,718 - INFO - DROP no_price: https://www.thegioididong.com/tin-tuc/choi-game-khong-can-thoa-hiep-nhan-ngay-1-trong-4-game-khi-mua-laptop-gaming-1584948
+2025-11-25 10:55:15,490 - INFO - Hoàn tất crawl thegioididong: tìm được 574 URLs, thời gian 158.0s
+2025-11-25 10:55:15,503 - INFO - Hoàn tất EXTRACT, tổng 574 sản phẩm → data_output\raw_laptop_20251125_105515.csv
+2025-11-25 10:55:15,504 - INFO - === BẮT ĐẦU TRANSFORM ===
+2025-11-25 10:55:15,504 - INFO - Đọc dữ liệu từ: data_output\raw_laptop_20251125_105515.csv
+2025-11-25 10:55:15,510 - INFO - Đọc thành công 574 dòng, 8 cột
+2025-11-25 10:55:15,511 - INFO - Bắt đầu làm sạch dữ liệu...
+2025-11-25 10:55:15,520 - INFO - Làm sạch xong, giữ lại 574 dòng hợp lệ
+2025-11-25 10:55:15,541 - INFO - Đã lưu dữ liệu sạch → data_output\clean_laptop_20251125_105515.csv
+2025-11-25 10:55:15,541 - INFO - === HOÀN TẤT TRANSFORM ===
+2025-11-25 13:36:35,740 - INFO - === BẮT ĐẦU QUÁ TRÌNH EXTRACT (thử lần 1) ===
+2025-11-25 13:36:35,740 - INFO - Đang crawl nguồn: thegioididong
+2025-11-25 13:36:38,720 - INFO - [thegioididong] Sitemap contains 191 loc entries
+2025-11-25 13:36:38,721 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2014-3?page=1
+2025-11-25 13:36:38,721 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2015-12?page=1
+2025-11-25 13:36:38,722 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-2?page=1
+2025-11-25 13:36:38,722 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-3?page=1
+2025-11-25 13:36:38,723 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-10?page=1
+2025-11-25 13:36:38,724 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-11?page=1
+2025-11-25 13:36:38,725 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-4?page=1
+2025-11-25 13:36:38,725 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-8?page=1
+2025-11-25 13:36:38,725 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-9?page=1
+2025-11-25 13:36:38,727 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-10?page=1
+2025-11-25 13:36:38,727 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-11?page=1
+2025-11-25 13:36:38,727 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-12?page=1
+2025-11-25 13:36:38,728 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-1?page=1
+2025-11-25 13:36:38,728 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-2?page=1
+2025-11-25 13:36:38,729 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-3?page=1
+2025-11-25 13:36:38,729 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-4?page=1
+2025-11-25 13:36:38,730 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-9?page=1
+2025-11-25 13:36:38,730 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-11?page=1
+2025-11-25 13:36:38,730 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-12?page=1
+2025-11-25 13:36:38,731 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2019-1?page=1
+2025-11-25 13:36:38,731 - INFO - [thegioididong] Using single fragment seed page: https://www.thegioididong.com/laptop#c=44&o=13&pi=21
+2025-11-25 13:36:38,732 - INFO - [thegioididong] Fetching category page 1/1: https://www.thegioididong.com/laptop#c=44&o=13&pi=21
+2025-11-25 13:36:38,733 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:36:42,089 - INFO - [thegioididong] Page 1 anchors found: 541
+2025-11-25 13:36:42,101 - INFO - [thegioididong] Added 124 candidate URLs from page 1
+2025-11-25 13:36:42,101 - INFO - [thegioididong] Found 124 URLs
+2025-11-25 13:36:42,101 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-dell
+2025-11-25 13:36:42,101 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-khoang-13-inch
+2025-11-25 13:36:42,102 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ssd-2-tb
+2025-11-25 13:36:42,102 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/msi-thin-15-b13ucx-i5-2080vn
+2025-11-25 13:36:42,103 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-khoang-14-inch
+2025-11-25 13:36:42,103 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-core-9
+2025-11-25 13:36:42,103 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-hp-compaq
+2025-11-25 13:36:42,104 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-2k
+2025-11-25 13:36:42,104 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/hp-240-g10-i5-b93gzat
+2025-11-25 13:36:42,105 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-retina
+2025-11-25 13:36:42,105 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-gigabyte-gigabyte-aorus
+2025-11-25 13:36:42,105 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-asus-zenbook
+2025-11-25 13:36:42,107 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/hp-240-g10-i3-b73tjat
+2025-11-25 13:36:42,107 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-gigabyte-a-series
+2025-11-25 13:36:42,108 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-36-gb
+2025-11-25 13:36:42,108 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ryzen-ai-300-series
+2025-11-25 13:36:42,110 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-gigabyte
+2025-11-25 13:36:42,111 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-bao-mat-khuon-mat
+2025-11-25 13:36:42,112 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-8-gb
+2025-11-25 13:36:42,112 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ultra-7
+2025-11-25 13:36:51,637 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:36:58,346 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:37:03,279 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:37:04,232 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:37:10,735 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:37:12,312 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:37:13,946 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:37:18,044 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:37:18,046 - INFO - DROP no_price: https://www.thegioididong.com/tin-tuc/choi-game-khong-can-thoa-hiep-nhan-ngay-1-trong-4-game-khi-mua-laptop-gaming-1584948
+2025-11-25 13:37:20,561 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:37:20,893 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:37:21,432 - INFO - Hoàn tất crawl thegioididong: tìm được 123 URLs, thời gian 45.7s
+2025-11-25 13:37:21,449 - INFO - Hoàn tất EXTRACT, tổng 123 sản phẩm → data_output\raw_laptop_20251125_133721.csv
+2025-11-25 13:40:54,166 - INFO - === BẮT ĐẦU QUÁ TRÌNH EXTRACT (thử lần 1) ===
+2025-11-25 13:40:54,166 - INFO - Đang crawl nguồn: thegioididong
+2025-11-25 13:40:56,526 - INFO - [thegioididong] Sitemap contains 191 loc entries
+2025-11-25 13:40:56,526 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2014-3?page=1
+2025-11-25 13:40:56,526 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2015-12?page=1
+2025-11-25 13:40:56,527 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-2?page=1
+2025-11-25 13:40:56,527 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-3?page=1
+2025-11-25 13:40:56,527 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-10?page=1
+2025-11-25 13:40:56,527 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-11?page=1
+2025-11-25 13:40:56,527 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-4?page=1
+2025-11-25 13:40:56,528 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-8?page=1
+2025-11-25 13:40:56,528 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-9?page=1
+2025-11-25 13:40:56,528 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-10?page=1
+2025-11-25 13:40:56,528 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-11?page=1
+2025-11-25 13:40:56,528 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-12?page=1
+2025-11-25 13:40:56,529 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-1?page=1
+2025-11-25 13:40:56,529 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-2?page=1
+2025-11-25 13:40:56,530 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-3?page=1
+2025-11-25 13:40:56,530 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-4?page=1
+2025-11-25 13:40:56,530 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-9?page=1
+2025-11-25 13:40:56,530 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-11?page=1
+2025-11-25 13:40:56,530 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-12?page=1
+2025-11-25 13:40:56,530 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2019-1?page=1
+2025-11-25 13:40:56,530 - INFO - [thegioididong] Using single fragment seed page: https://www.thegioididong.com/laptop#c=44&o=13&pi=21
+2025-11-25 13:40:56,530 - INFO - [thegioididong] Fetching category page 1/1: https://www.thegioididong.com/laptop#c=44&o=13&pi=21
+2025-11-25 13:40:56,530 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:40:59,096 - INFO - [thegioididong] Page 1 anchors found: 541
+2025-11-25 13:40:59,099 - INFO - [thegioididong] Added 124 candidate URLs from page 1
+2025-11-25 13:40:59,099 - INFO - [thegioididong] Found 124 URLs
+2025-11-25 13:40:59,100 - INFO - [thegioididong] Sample URL: http://www.thegioididong.com/laptop-ssd-1-tb
+2025-11-25 13:40:59,100 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-32-gb-emmc
+2025-11-25 13:40:59,100 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-core-7
+2025-11-25 13:40:59,100 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ban-phim-so
+2025-11-25 13:40:59,100 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-32-gb
+2025-11-25 13:40:59,101 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-gigabyte
+2025-11-25 13:40:59,101 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/hoi-dap/nen-mua-laptop-co-card-do-hoa-roi-nao-1181568
+2025-11-25 13:40:59,101 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/dell-15-dc15250-i7-dc5i7748w1
+2025-11-25 13:40:59,101 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-core-i3
+2025-11-25 13:40:59,101 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/hp-15-fc0085au-r5-a6vv8pa
+2025-11-25 13:40:59,101 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-bao-mat-van-tay
+2025-11-25 13:40:59,103 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-apple-macbook-pro-m4-series
+2025-11-25 13:40:59,103 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-gigabyte-a-series
+2025-11-25 13:40:59,103 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-apple-macbook
+2025-11-25 13:40:59,104 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ryzen-ai-300-series
+2025-11-25 13:40:59,104 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ai
+2025-11-25 13:40:59,104 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/acer-aspire-lite-15-al15-71p-517d-i5-nxj7ksv001
+2025-11-25 13:40:59,104 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-hp-compaq
+2025-11-25 13:40:59,104 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-celeron-pentium
+2025-11-25 13:40:59,105 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-rtx-40-series
+2025-11-25 13:41:03,921 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:41:09,369 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:41:10,924 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:41:19,243 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:41:22,717 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:41:27,251 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:41:27,953 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:41:30,610 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:41:30,612 - INFO - DROP no_price: https://www.thegioididong.com/tin-tuc/choi-game-khong-can-thoa-hiep-nhan-ngay-1-trong-4-game-khi-mua-laptop-gaming-1584948
+2025-11-25 13:41:32,691 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:41:36,302 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:41:37,317 - INFO - Hoàn tất crawl thegioididong: tìm được 123 URLs, thời gian 43.2s
+2025-11-25 13:41:37,328 - INFO - Hoàn tất EXTRACT, tổng 123 sản phẩm → data_output\raw_laptop_20251125_134137.csv
+2025-11-25 13:56:34,320 - INFO - === BẮT ĐẦU QUÁ TRÌNH EXTRACT (thử lần 1) ===
+2025-11-25 13:56:34,321 - INFO - Đang crawl nguồn: thegioididong
+2025-11-25 13:56:36,391 - INFO - [thegioididong] Sitemap contains 191 loc entries
+2025-11-25 13:56:36,392 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2014-3?page=1
+2025-11-25 13:56:36,392 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2015-12?page=1
+2025-11-25 13:56:36,392 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-2?page=1
+2025-11-25 13:56:36,393 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-3?page=1
+2025-11-25 13:56:36,393 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-10?page=1
+2025-11-25 13:56:36,393 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-11?page=1
+2025-11-25 13:56:36,393 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-4?page=1
+2025-11-25 13:56:36,393 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-8?page=1
+2025-11-25 13:56:36,394 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-9?page=1
+2025-11-25 13:56:36,394 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-10?page=1
+2025-11-25 13:56:36,394 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-11?page=1
+2025-11-25 13:56:36,394 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-12?page=1
+2025-11-25 13:56:36,394 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-1?page=1
+2025-11-25 13:56:36,395 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-2?page=1
+2025-11-25 13:56:36,395 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-3?page=1
+2025-11-25 13:56:36,395 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-4?page=1
+2025-11-25 13:56:36,395 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-9?page=1
+2025-11-25 13:56:36,395 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-11?page=1
+2025-11-25 13:56:36,395 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-12?page=1
+2025-11-25 13:56:36,395 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2019-1?page=1
+2025-11-25 13:56:36,396 - INFO - [thegioididong] Using single fragment seed page: https://www.thegioididong.com/laptop#c=44&o=13&pi=21
+2025-11-25 13:56:36,396 - INFO - [thegioididong] Fetching category page 1/1: https://www.thegioididong.com/laptop#c=44&o=13&pi=21
+2025-11-25 13:56:36,396 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:56:38,872 - INFO - [thegioididong] Page 1 anchors found: 541
+2025-11-25 13:56:38,877 - INFO - [thegioididong] Added 124 candidate URLs from page 1
+2025-11-25 13:56:38,877 - INFO - [thegioididong] Found 124 URLs
+2025-11-25 13:56:38,877 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ssd-1-tb
+2025-11-25 13:56:38,878 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-man-hinh-gap-360-do
+2025-11-25 13:56:38,879 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-gigabyte
+2025-11-25 13:56:38,879 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/apple-macbook-air-m2-2022-16gb-256gb
+2025-11-25 13:56:38,879 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-gigabyte-a-series
+2025-11-25 13:56:38,879 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-8-gb
+2025-11-25 13:56:38,881 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-apple-macbook-pro-m4-series
+2025-11-25 13:56:38,881 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-32-gb-emmc
+2025-11-25 13:56:38,881 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/hoi-dap/top-5-laptop-danh-cho-hoc-sinh-sinh-vien-977362
+2025-11-25 13:56:38,881 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-msi
+2025-11-25 13:56:38,881 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ssd-6-tb
+2025-11-25 13:56:38,882 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-250-hz
+2025-11-25 13:56:38,882 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ultra-5
+2025-11-25 13:56:38,883 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-card-tich-hop
+2025-11-25 13:56:38,883 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/lenovo-ideapad-slim-3-16irh10-i5-83k20003vn
+2025-11-25 13:56:38,885 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/loa-laptop
+2025-11-25 13:56:38,885 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-core-i3
+2025-11-25 13:56:38,886 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-asus-zenbook
+2025-11-25 13:56:38,886 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ai
+2025-11-25 13:56:38,886 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-apple-macbook-air
+2025-11-25 13:56:43,984 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:56:48,492 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:56:50,934 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:56:51,733 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:56:54,767 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:57:01,981 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:57:01,983 - INFO - DROP no_price: https://www.thegioididong.com/tin-tuc/choi-game-khong-can-thoa-hiep-nhan-ngay-1-trong-4-game-khi-mua-laptop-gaming-1584948
+2025-11-25 13:57:03,063 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:57:03,610 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:57:05,599 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:57:10,408 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:57:14,213 - INFO - Hoàn tất crawl thegioididong: tìm được 123 URLs, thời gian 39.9s
+2025-11-25 13:57:14,222 - INFO - Hoàn tất EXTRACT, tổng 123 sản phẩm → data_output\raw_laptop_20251125_135714.csv
+2025-11-25 13:58:45,109 - INFO - === BẮT ĐẦU QUÁ TRÌNH EXTRACT (thử lần 1) ===
+2025-11-25 13:58:45,110 - INFO - Đang crawl nguồn: thegioididong
+2025-11-25 13:58:47,617 - INFO - [thegioididong] Sitemap contains 191 loc entries
+2025-11-25 13:58:47,618 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2014-3?page=1
+2025-11-25 13:58:47,618 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2015-12?page=1
+2025-11-25 13:58:47,618 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-2?page=1
+2025-11-25 13:58:47,618 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-3?page=1
+2025-11-25 13:58:47,619 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-10?page=1
+2025-11-25 13:58:47,619 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-11?page=1
+2025-11-25 13:58:47,619 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-4?page=1
+2025-11-25 13:58:47,619 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-8?page=1
+2025-11-25 13:58:47,620 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-9?page=1
+2025-11-25 13:58:47,620 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-10?page=1
+2025-11-25 13:58:47,620 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-11?page=1
+2025-11-25 13:58:47,621 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-12?page=1
+2025-11-25 13:58:47,621 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-1?page=1
+2025-11-25 13:58:47,621 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-2?page=1
+2025-11-25 13:58:47,621 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-3?page=1
+2025-11-25 13:58:47,621 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-4?page=1
+2025-11-25 13:58:47,622 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-9?page=1
+2025-11-25 13:58:47,622 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-11?page=1
+2025-11-25 13:58:47,622 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-12?page=1
+2025-11-25 13:58:47,622 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2019-1?page=1
+2025-11-25 13:58:47,622 - INFO - [thegioididong] Using single fragment seed page: https://www.thegioididong.com/laptop#c=44&o=13&pi=21
+2025-11-25 13:58:47,623 - INFO - [thegioididong] Fetching category page 1/1: https://www.thegioididong.com/laptop#c=44&o=13&pi=21
+2025-11-25 13:58:47,623 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:58:50,313 - INFO - [thegioididong] Page 1 anchors found: 541
+2025-11-25 13:58:50,316 - INFO - [thegioididong] Added 124 candidate URLs from page 1
+2025-11-25 13:58:50,317 - INFO - [thegioididong] Found 124 URLs
+2025-11-25 13:58:50,318 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/hoi-dap/top-5-laptop-gon-nhe-de-di-chuyen-979855
+2025-11-25 13:58:50,318 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-core-7
+2025-11-25 13:58:50,318 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-card-tich-hop
+2025-11-25 13:58:50,318 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/hoi-dap/cach-chon-laptop-de-su-dung-thiet-ke-do-hoa-va-ky-1022621
+2025-11-25 13:58:50,319 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-core-5
+2025-11-25 13:58:50,319 - INFO - [thegioididong] Sample URL: http://www.thegioididong.com/laptop-asus-zenbook
+2025-11-25 13:58:50,319 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/hp-240-g10-i5-b93gzat
+2025-11-25 13:58:50,319 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-man-hinh-cam-ung
+2025-11-25 13:58:50,321 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ky-thuat
+2025-11-25 13:58:50,321 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ultra-7
+2025-11-25 13:58:50,321 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-2k
+2025-11-25 13:58:50,321 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-18-gb
+2025-11-25 13:58:50,322 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-man-hinh-chong-choi-anti-glare
+2025-11-25 13:58:50,322 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/hp-240-g10-i3-b73tjat
+2025-11-25 13:58:50,322 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-120-hz
+2025-11-25 13:58:50,323 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/dell-15-dc15250-i7-dc5i7748w1
+2025-11-25 13:58:50,323 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/macbook-air-13-inch-m4-16gb-256gb
+2025-11-25 13:58:50,323 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-64-gb
+2025-11-25 13:58:50,323 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-apple-macbook-air
+2025-11-25 13:58:50,323 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-khoang-15-inch
+2025-11-25 13:58:55,268 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:58:55,318 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:59:08,339 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:59:11,776 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:59:13,499 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:59:17,537 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:59:17,539 - INFO - DROP no_price: https://www.thegioididong.com/tin-tuc/choi-game-khong-can-thoa-hiep-nhan-ngay-1-trong-4-game-khi-mua-laptop-gaming-1584948
+2025-11-25 13:59:18,136 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:59:19,134 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:59:21,262 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:59:25,391 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 13:59:26,202 - INFO - Hoàn tất crawl thegioididong: tìm được 123 URLs, thời gian 41.1s
+2025-11-25 13:59:26,211 - INFO - Hoàn tất EXTRACT, tổng 123 sản phẩm → data_output\raw_laptop_20251125_135926.csv
+2025-11-25 14:00:30,655 - INFO - === BẮT ĐẦU QUÁ TRÌNH EXTRACT (thử lần 1) ===
+2025-11-25 14:00:30,655 - INFO - Đang crawl nguồn: thegioididong
+2025-11-25 14:00:32,772 - INFO - [thegioididong] Sitemap contains 191 loc entries
+2025-11-25 14:00:32,773 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2014-3?page=1
+2025-11-25 14:00:32,773 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2015-12?page=1
+2025-11-25 14:00:32,773 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-2?page=1
+2025-11-25 14:00:32,774 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-3?page=1
+2025-11-25 14:00:32,774 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-10?page=1
+2025-11-25 14:00:32,775 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-11?page=1
+2025-11-25 14:00:32,776 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-4?page=1
+2025-11-25 14:00:32,776 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-8?page=1
+2025-11-25 14:00:32,776 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-9?page=1
+2025-11-25 14:00:32,776 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-10?page=1
+2025-11-25 14:00:32,777 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-11?page=1
+2025-11-25 14:00:32,778 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-12?page=1
+2025-11-25 14:00:32,778 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-1?page=1
+2025-11-25 14:00:32,778 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-2?page=1
+2025-11-25 14:00:32,778 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-3?page=1
+2025-11-25 14:00:32,779 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-4?page=1
+2025-11-25 14:00:32,779 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-9?page=1
+2025-11-25 14:00:32,779 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-11?page=1
+2025-11-25 14:00:32,780 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-12?page=1
+2025-11-25 14:00:32,780 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2019-1?page=1
+2025-11-25 14:00:32,781 - INFO - [thegioididong] Using single fragment seed page: https://www.thegioididong.com/laptop#c=44&o=13&pi=21
+2025-11-25 14:00:32,781 - INFO - [thegioididong] Fetching category page 1/1: https://www.thegioididong.com/laptop#c=44&o=13&pi=21
+2025-11-25 14:00:32,782 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:00:35,881 - INFO - [thegioididong] Page 1 anchors found: 541
+2025-11-25 14:00:35,884 - INFO - [thegioididong] Added 124 candidate URLs from page 1
+2025-11-25 14:00:35,884 - INFO - [thegioididong] Found 124 URLs
+2025-11-25 14:00:35,885 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/may-doi-tra/laptop
+2025-11-25 14:00:35,885 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-apple-macbook
+2025-11-25 14:00:35,887 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/apple-macbook-air-m2-2022-16gb-256gb
+2025-11-25 14:00:35,887 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-den-ban-phim
+2025-11-25 14:00:35,887 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/msi-thin-15-b13ucx-i5-2080vn
+2025-11-25 14:00:35,887 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-lenovo-thinkpad
+2025-11-25 14:00:35,888 - INFO - [thegioididong] Sample URL: http://www.thegioididong.com/laptop-ssd-1-tb
+2025-11-25 14:00:35,888 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ryzen-9
+2025-11-25 14:00:35,888 - INFO - [thegioididong] Sample URL: http://www.thegioididong.com/laptop-asus-zenbook
+2025-11-25 14:00:35,889 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-core-i3
+2025-11-25 14:00:35,889 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ryzen-5
+2025-11-25 14:00:35,889 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-lenovo-gaming-legion
+2025-11-25 14:00:35,889 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/hoi-dap/top-10-laptop-gaming-duoi-35-trieu-ban-chay-nhat-the-gioi-1407251
+2025-11-25 14:00:35,889 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ryzen-7
+2025-11-25 14:00:35,889 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-hd
+2025-11-25 14:00:35,889 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-khoang-15-inch
+2025-11-25 14:00:35,890 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/acer-nitro-v-15-anv15-41-r1jy-r5-nhqpfsv001
+2025-11-25 14:00:35,890 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-rtx-50-series
+2025-11-25 14:00:35,890 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ky-thuat
+2025-11-25 14:00:35,890 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-32-gb-emmc
+2025-11-25 14:00:40,820 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:00:42,093 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:00:44,921 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:00:52,318 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:00:53,794 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:00:53,795 - INFO - DROP no_price: https://www.thegioididong.com/tin-tuc/choi-game-khong-can-thoa-hiep-nhan-ngay-1-trong-4-game-khi-mua-laptop-gaming-1584948
+2025-11-25 14:00:58,749 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:00:59,026 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:01:00,857 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:01:05,840 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:01:12,027 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:01:12,037 - INFO - Hoàn tất crawl thegioididong: tìm được 123 URLs, thời gian 41.4s
+2025-11-25 14:01:12,063 - INFO - Hoàn tất EXTRACT, tổng 123 sản phẩm → data_output\raw_laptop_20251125_140112.csv
+2025-11-25 14:02:14,891 - INFO - === BẮT ĐẦU QUÁ TRÌNH EXTRACT (thử lần 1) ===
+2025-11-25 14:02:14,892 - INFO - Đang crawl nguồn: thegioididong
+2025-11-25 14:02:17,199 - INFO - [thegioididong] Sitemap contains 191 loc entries
+2025-11-25 14:02:17,200 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2014-3?page=1
+2025-11-25 14:02:17,200 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2015-12?page=1
+2025-11-25 14:02:17,201 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-2?page=1
+2025-11-25 14:02:17,201 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-3?page=1
+2025-11-25 14:02:17,201 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-10?page=1
+2025-11-25 14:02:17,201 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2016-11?page=1
+2025-11-25 14:02:17,201 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-4?page=1
+2025-11-25 14:02:17,201 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-8?page=1
+2025-11-25 14:02:17,203 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-9?page=1
+2025-11-25 14:02:17,203 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-10?page=1
+2025-11-25 14:02:17,203 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-11?page=1
+2025-11-25 14:02:17,203 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2017-12?page=1
+2025-11-25 14:02:17,203 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-1?page=1
+2025-11-25 14:02:17,204 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-2?page=1
+2025-11-25 14:02:17,204 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-3?page=1
+2025-11-25 14:02:17,204 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-4?page=1
+2025-11-25 14:02:17,204 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-9?page=1
+2025-11-25 14:02:17,204 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-11?page=1
+2025-11-25 14:02:17,204 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2018-12?page=1
+2025-11-25 14:02:17,204 - INFO - [thegioididong] Sitemap sample: https://www.thegioididong.com/newsitemap/sitemap-product-2019-1?page=1
+2025-11-25 14:02:17,204 - INFO - [thegioididong] Using single fragment seed page: https://www.thegioididong.com/laptop#c=44&o=13&pi=21
+2025-11-25 14:02:17,205 - INFO - [thegioididong] Fetching category page 1/1: https://www.thegioididong.com/laptop#c=44&o=13&pi=21
+2025-11-25 14:02:17,205 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:02:19,458 - INFO - [thegioididong] Page 1 anchors found: 541
+2025-11-25 14:02:19,464 - INFO - [thegioididong] Added 124 candidate URLs from page 1
+2025-11-25 14:02:19,464 - INFO - [thegioididong] Found 124 URLs
+2025-11-25 14:02:19,465 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-64-gb
+2025-11-25 14:02:19,465 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-khoang-15-inch
+2025-11-25 14:02:19,465 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-apple-macbook-pro-m4-series
+2025-11-25 14:02:19,465 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-radeon-rx
+2025-11-25 14:02:19,465 - INFO - [thegioididong] Sample URL: http://www.thegioididong.com/laptop
+2025-11-25 14:02:19,467 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ryzen-9
+2025-11-25 14:02:19,467 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ryzen-ai-300-series
+2025-11-25 14:02:19,467 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-36-gb
+2025-11-25 14:02:19,468 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-core-9
+2025-11-25 14:02:19,468 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-192-gb
+2025-11-25 14:02:19,468 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ultra-9
+2025-11-25 14:02:19,468 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ky-thuat
+2025-11-25 14:02:19,468 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-acer-predator
+2025-11-25 14:02:19,468 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-lg
+2025-11-25 14:02:19,468 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/may-doi-tra/laptop
+2025-11-25 14:02:19,469 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-250-hz
+2025-11-25 14:02:19,469 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ban-phim-so
+2025-11-25 14:02:19,469 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop/dell-inspiron-15-3530-i5-71070372
+2025-11-25 14:02:19,469 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-ai
+2025-11-25 14:02:19,469 - INFO - [thegioididong] Sample URL: https://www.thegioididong.com/laptop-core-i9
+2025-11-25 14:02:27,391 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:02:30,382 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:02:30,463 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:02:34,290 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:02:34,781 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:02:39,778 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:02:40,671 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:02:50,809 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:02:51,353 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:02:51,355 - INFO - DROP no_price: https://www.thegioididong.com/tin-tuc/choi-game-khong-can-thoa-hiep-nhan-ngay-1-trong-4-game-khi-mua-laptop-gaming-1584948
+2025-11-25 14:02:57,955 - WARNING - Playwright not installed; render_html unavailable.
+2025-11-25 14:02:58,320 - INFO - Hoàn tất crawl thegioididong: tìm được 123 URLs, thời gian 43.4s
+2025-11-25 14:02:58,330 - INFO - Hoàn tất EXTRACT, tổng 123 sản phẩm → data_output\raw_laptop_20251125_140258.csv
+2025-11-25 14:02:58,543 - ERROR - Extract chưa success (status=None) → Transform dừng

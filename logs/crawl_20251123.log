@@ -1,0 +1,770 @@
+2025-11-23 09:42:48,879 - INFO - === Bắt đầu crawl dữ liệu laptop ===
+2025-11-23 09:42:48,879 - INFO - Đang crawl site: cellphones
+2025-11-23 09:42:52,732 - INFO - [cellphones] từ sitemap: 300 URL sản phẩm
+2025-11-23 09:42:52,894 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop (404)
+2025-11-23 09:42:53,036 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=2 (404)
+2025-11-23 09:42:53,150 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=3 (404)
+2025-11-23 09:42:53,236 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=4 (404)
+2025-11-23 09:42:53,365 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=5 (404)
+2025-11-23 09:42:53,470 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=6 (404)
+2025-11-23 09:42:53,582 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=7 (404)
+2025-11-23 09:42:53,676 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=8 (404)
+2025-11-23 09:42:53,676 - INFO - [cellphones] từ danh mục: +0 URL sản phẩm (seed: https://cellphones.com.vn/laptop/)
+2025-11-23 09:42:53,680 - INFO - [cellphones] Tổng URL ứng viên cuối: 300
+2025-11-23 09:42:55,106 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:42:55,165 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:42:56,430 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-go-14-ag14-72p-563l.html
+2025-11-23 09:42:56,940 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-sony-xperia-10-vii.html
+2025-11-23 09:42:57,105 - INFO - DROP no_price: https://cellphones.com.vn/bo-sac-baseus-enercore-3c-67w-kem-cap-usb-c-rut-gon-cj11.html
+2025-11-23 09:42:57,162 - INFO - DROP no_price: https://cellphones.com.vn/noi-chien-khong-dau-gaabor-af-80t01a-6-2-lit-cu.html
+2025-11-23 09:42:57,339 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-dinh-vi-tre-em-wonlex-kt34-cu-dep.html
+2025-11-23 09:42:57,357 - INFO - DROP no_price: https://cellphones.com.vn/laptop-dell-vostro-3530-2h1tpi5-16gb-cu-tray-xuoc.html
+2025-11-23 09:42:58,641 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:42:58,799 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:42:59,129 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-honor-x9d.html
+2025-11-23 09:42:59,308 - INFO - DROP no_price: https://cellphones.com.vn/vivo-y100-128gb-cu-xuoc-can.html
+2025-11-23 09:42:59,981 - INFO - DROP no_price: https://cellphones.com.vn/vi-magsafe-iphone-uag-metropolis-pu.html
+2025-11-23 09:43:00,150 - INFO - DROP no_price: https://cellphones.com.vn/apple-airpods-max-2021-cu-dep.html
+2025-11-23 09:43:00,564 - INFO - DROP no_price: https://cellphones.com.vn/ban-phim-thong-minh-huawei-matepad-11-5.html
+2025-11-23 09:43:00,811 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-swift-x-sfx14-71g-78sy.html
+2025-11-23 09:43:00,860 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-magnetic-ultra-slim-10000mah-20w-s10.html
+2025-11-23 09:43:01,059 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-tecno-spark-40-cu-dep.html
+2025-11-23 09:43:01,084 - INFO - DROP no_price: https://cellphones.com.vn/hub-chuyen-doi-anker-7-in-1-usb-c-a83d2.html
+2025-11-23 09:43:02,018 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:43:02,162 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:43:02,711 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-tuf-gaming-f16-fx607ju-n3139w-cu-dep.html
+2025-11-23 09:43:02,908 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-xiaomi-redmi-pad-2-pro-zeelot-solidsleek-full.html
+2025-11-23 09:43:03,223 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-philips-27e2g2200-27-inch-cu-da-kich-hoat.html
+2025-11-23 09:43:03,852 - INFO - DROP no_price: https://cellphones.com.vn/loa-karaoke-xach-tay-paramax-sonus.html
+2025-11-23 09:43:04,101 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-gaming-predator-helios-16-ai-ph16-73-93hd.html
+2025-11-23 09:43:04,212 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-legion-7-16iax10-83ky001uvn-cu-da-kich-hoat.html
+2025-11-23 09:43:04,291 - INFO - DROP no_price: https://cellphones.com.vn/may-in-laser-mau-brother-hl-3280cdw.html
+2025-11-23 09:43:04,443 - INFO - DROP no_price: https://cellphones.com.vn/laptop-gigabyte-gaming-a16-ga6h-cvhi3vn893sh.html
+2025-11-23 09:43:04,458 - INFO - DROP no_price: https://cellphones.com.vn/apple-macbook-air-15-m4-10cpu-10gpu-24gb-512gb-2025-ch-cu-dkh.html
+2025-11-23 09:43:04,515 - INFO - DROP no_price: https://cellphones.com.vn/camera-hanh-dong-dji-action-5-pro-standard-cu.html
+2025-11-23 09:43:04,595 - INFO - DROP no_price: https://cellphones.com.vn/camera-thang-may-dahua-2mp-co-tieng.html
+2025-11-23 09:43:04,658 - INFO - DROP no_price: https://cellphones.com.vn/honor-x5-plus-cu-xuoc-can.html
+2025-11-23 09:43:04,658 - INFO - DROP no_price: https://cellphones.com.vn/camera-thang-may-hikvision-4mp-co-tieng.html
+2025-11-23 09:43:04,749 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-baseus-airpow-fast-charge-10000mah-20w.html
+2025-11-23 09:43:05,915 - INFO - DROP no_price: https://cellphones.com.vn/ipad-air-6-m2-13-inch-512gb-5g-cu-dep.html
+2025-11-23 09:43:05,915 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-honor-pad-10.html
+2025-11-23 09:43:06,015 - INFO - DROP no_price: https://cellphones.com.vn/dich-vu-apple-care-plus-ipad-pro-11-inch-m5.html
+2025-11-23 09:43:06,025 - INFO - DROP no_price: https://cellphones.com.vn/vivo-x70-pro-plus-5g-12gb-256gb-cu-tray-xuoc.html
+2025-11-23 09:43:06,027 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-honor-pad-x7-cu-da-kich-hoat.html
+2025-11-23 09:43:06,030 - INFO - DROP no_price: https://cellphones.com.vn/loa-karaoke-xach-tay-paramax-aura.html
+2025-11-23 09:43:06,107 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-swift-edge-14-ai-sfe14-51t-52kd.html
+2025-11-23 09:43:06,260 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-z-flip-7-5g-12gb-256gb-cu-dep.html
+2025-11-23 09:43:06,262 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-tuf-gaming-a15-fa506nf-hn005w-cu-xuoc-can.html
+2025-11-23 09:43:06,324 - INFO - DROP no_price: https://cellphones.com.vn/laptop-dell-inspiron-15-3520-6r6nk-cu-xuoc-can.html
+2025-11-23 09:43:06,330 - INFO - DROP no_price: https://cellphones.com.vn/router-wifi-7-tp-link-archer-be220-be3600-bang-tan-kep.html
+2025-11-23 09:43:06,332 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-loq-15iax9e-83lk0079vn-cu-dep.html
+2025-11-23 09:43:07,167 - INFO - DROP no_price: https://cellphones.com.vn/loa-party-alpha-works-genbeat-520.html
+2025-11-23 09:43:07,330 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-10000mah-22-5w-q10plus.html
+2025-11-23 09:43:07,437 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-vivobook-go-15-e1504fa-bq1150w-cu-da-kich-hoat.html
+2025-11-23 09:43:07,462 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-xiaomi-15t-15t-pro-mipow-full.html
+2025-11-23 09:43:07,538 - INFO - DROP no_price: https://cellphones.com.vn/may-massage-co-vai-gay-philips-ppm3306-cu.html
+2025-11-23 09:43:07,576 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-xiaomi-15t-mipow-soft-transparent.html
+2025-11-23 09:43:07,583 - INFO - DROP no_price: https://cellphones.com.vn/mainboard-asus-prime-b860m-k-ddr5.html
+2025-11-23 09:43:07,633 - INFO - DROP no_price: https://cellphones.com.vn/loa-party-alpha-works-genbeat-120.html
+2025-11-23 09:43:07,643 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-go-15-ag15-72p-776j.html
+2025-11-23 09:43:07,738 - INFO - DROP no_price: https://cellphones.com.vn/macbook-air-15-m3-24gb-512gb-2024-35w-cu-dep.html
+2025-11-23 09:43:07,763 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-cyborg-15-a13uc-2088vn.html
+2025-11-23 09:43:07,805 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-dinh-vi-tre-em-wonlex-ct24-cu-tray-xuoc.html
+2025-11-23 09:43:08,553 - INFO - DROP no_price: https://cellphones.com.vn/apple-ipad-pro-11-2020-4g-256-gb-cu-tray-xuoc.html
+2025-11-23 09:43:08,737 - INFO - DROP no_price: https://cellphones.com.vn/samsung-galaxy-z-flip-6-512gb-cu-xuoc-can.html
+2025-11-23 09:43:08,844 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-ultra-2-2024-49mm-4g-vien-titan-day-alpine-m-cu-dep.html
+2025-11-23 09:43:08,850 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-predator-triton-neo-16-ptn16-51-78jq.html
+2025-11-23 09:43:08,984 - INFO - DROP no_price: https://cellphones.com.vn/cap-hyperjuice-type-c-to-c-240w-2m.html
+2025-11-23 09:43:08,984 - INFO - DROP no_price: https://cellphones.com.vn/ipad-air-m3-11-inch-512gb-cu-dep.html
+2025-11-23 09:43:08,997 - INFO - DROP no_price: https://cellphones.com.vn/mainboard-gigabyte-b860m-k-ddr5.html
+2025-11-23 09:43:09,016 - INFO - DROP no_price: https://cellphones.com.vn/vong-giu-dien-thoai-uag-monarch-magnetic-2.html
+2025-11-23 09:43:09,048 - INFO - DROP no_price: https://cellphones.com.vn/sim-5g-viettel-12t5g180b-6gb-ngay.html
+2025-11-23 09:43:09,101 - INFO - DROP no_price: https://cellphones.com.vn/cu-sac-belkin-boostcharge-pro-70w-2c1a-gan-pd3-1.html
+2025-11-23 09:43:09,234 - INFO - DROP no_price: https://cellphones.com.vn/tai-nghe-bluetooth-chup-tai-edifier-evobuds.html
+2025-11-23 09:43:09,346 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-oppo-find-x9-cu-da-kich-hoat.html
+2025-11-23 09:43:10,115 - INFO - DROP no_price: https://cellphones.com.vn/may-in-laser-mau-brother-dcp-3560cdw.html
+2025-11-23 09:43:10,309 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-gaming-lg-ultragear-24gs65f-24-inch-cu-dep.html
+2025-11-23 09:43:10,411 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-itel-isw-o11-cu-dep.html
+2025-11-23 09:43:10,468 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-oppo-find-x9-pro-zeelot-solidsleek-full.html
+2025-11-23 09:43:10,468 - INFO - DROP no_price: https://cellphones.com.vn/oppo-a5-pro-5g-8gb-256gb-cu-dep.html
+2025-11-23 09:43:10,512 - INFO - DROP no_price: https://cellphones.com.vn/combo-camera-hanh-dong-dji-action-4-ch-cu-da-kich-hoat.html
+2025-11-23 09:43:10,522 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-a17-5g-cu-tray-xuoc.html
+2025-11-23 09:43:10,534 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-gaming-samsung-odyssey-g3-g30d-ls24dg302eexxv-24-inch-cu-da-kich-hoat.html
+2025-11-23 09:43:10,604 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-coros-nomad.html
+2025-11-23 09:43:10,624 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-golf-20000mah-22-5w-p52.html
+2025-11-23 09:43:10,628 - INFO - DROP no_price: https://cellphones.com.vn/may-cao-rau-enchen-mini-x-cu.html
+2025-11-23 09:43:10,745 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-oppo-a5i-4gb-128gb-cu-dep.html
+2025-11-23 09:43:11,431 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-dong-stargo-gem-power-20000mah-22-5w.html
+2025-11-23 09:43:11,731 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-teclast-p30-wifi-cu-dep.html
+2025-11-23 09:43:11,828 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-tecno-spark-40-pro-plus-8gb-256gb-cu-dep.html
+2025-11-23 09:43:11,918 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-modern-15-h-ai-c2hmg-220vn.html
+2025-11-23 09:43:11,924 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-cyborg-15-b13wekg-676vn.html
+2025-11-23 09:43:11,936 - INFO - DROP no_price: https://cellphones.com.vn/tay-cam-chong-rung-dji-om-7-cu-da-kich-hoat.html
+2025-11-23 09:43:11,992 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-go-14-ai-ag14-71m-57wr-cu-da-kich-hoat.html
+2025-11-23 09:43:12,049 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-xiaomi-redmi-turbo-3-12gb-256gb-cu-xuoc-can.html
+2025-11-23 09:43:12,058 - INFO - DROP no_price: https://cellphones.com.vn/may-in-laser-mau-brother-hl-3240cdw.html
+2025-11-23 09:43:12,061 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-lite-15-al15-42p-r8e6.html
+2025-11-23 09:43:12,101 - INFO - DROP no_price: https://cellphones.com.vn/camera-thang-may-dahua-4mp-co-tieng-kem-dau-ghi.html
+2025-11-23 09:43:12,197 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-robot-10000mah-15w-tich-hop-cap-type-c-rt102.html
+2025-11-23 09:43:12,793 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-tecno-camon-40-pro-8gb-256gb-cu-xuoc-can.html
+2025-11-23 09:43:13,065 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-5-a514-56p-35x7-nx-khrsv-001-cu-tray-xuoc.html
+2025-11-23 09:43:13,240 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-philips-32e1n3500-32-inch.html
+2025-11-23 09:43:13,342 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-honor-400-5g-12gb-512gb-cu-da-kich-hoat.html
+2025-11-23 09:43:13,408 - INFO - DROP no_price: https://cellphones.com.vn/cu-sac-innostyle-gocharge-20w-pd-pps-gc20.html
+2025-11-23 09:43:13,418 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-gaming-nitro-v-15-propanel-anv15-52-59rr.html
+2025-11-23 09:43:13,520 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-oppo-find-x8-256gb-cu-xuoc-can.html
+2025-11-23 09:43:13,521 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-5-a515-58p-71ej.html
+2025-11-23 09:43:13,526 - INFO - DROP no_price: https://cellphones.com.vn/macbook-air-13-m4-10cpu-10gpu-24gb-512gb-2025-70w-ch-cu-dkh.html
+2025-11-23 09:43:13,528 - INFO - DROP no_price: https://cellphones.com.vn/gia-do-laptop-macbook-wiwu-zm-902.html
+2025-11-23 09:43:13,634 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-z-fold-7-12gb-512gb-cu-tray-xuoc.html
+2025-11-23 09:43:13,665 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-infinix-note-50-8gb-256gb-cu-dep.html
+2025-11-23 09:43:14,026 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-xiaomi-15-cu-xuoc-can.html
+2025-11-23 09:43:14,619 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-ultra-2-2024-49mm-4g-titan-trail-ch-cu-dkh.html
+2025-11-23 09:43:14,677 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-dinh-vi-tre-em-myalo-k64-cu-tray-xuoc.html
+2025-11-23 09:43:14,804 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-lite-16-gen-2-al16-52p-572a-cu-da-kich-hoat.html
+2025-11-23 09:43:14,906 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-cyborg-15-a13vek-2089vn.html
+2025-11-23 09:43:14,928 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-xiaomi-15t-pro-mipow-transparent-clear.html
+2025-11-23 09:43:14,945 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-gaming-lg-ultragear-24gs60f-b-24-inch-cu-da-kich-hoat.html
+2025-11-23 09:43:14,945 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-magnetic-slim-10000mah-22-5w-s10plus.html
+2025-11-23 09:43:14,975 - INFO - DROP no_price: https://cellphones.com.vn/tai-nghe-chup-tai-khong-day-baseus-bowie-mh1-anc.html
+2025-11-23 09:43:15,010 - INFO - DROP no_price: https://cellphones.com.vn/laptop-dell-15-dc15250-3g7t0-cu-dep.html
+2025-11-23 09:43:15,103 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-xiaomi-poco-f8-pro-zeelot-solidsleek-full.html
+2025-11-23 09:43:15,131 - INFO - DROP no_price: https://cellphones.com.vn/laptop-samsung-galaxy-chromebook-go-xe340xda-ka1vn.html
+2025-11-23 09:43:15,603 - INFO - DROP no_price: https://cellphones.com.vn/cap-innostyle-digipower-type-c-to-c-pd-100w-cc1001.html
+2025-11-23 09:43:16,061 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-nothing-phone-3a-cu-tray-xuoc.html
+2025-11-23 09:43:16,223 - INFO - DROP no_price: https://cellphones.com.vn/ipad-air-m3-11-inch-5g-128gb-2025-cu-xuoc-can.html
+2025-11-23 09:43:16,229 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-prestige-13-ai-ukiyoe-edition-a2vmg-075vn.html
+2025-11-23 09:43:16,258 - INFO - DROP no_price: https://cellphones.com.vn/loa-vi-tinh-edifier-s450db.html
+2025-11-23 09:43:16,333 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-vivoboook-s-14-oled-s5406ma-pp046ws-16gb-cu-da-kich-hoat.html
+2025-11-23 09:43:16,380 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-xiaomi-15t-likgus-pu-clear.html
+2025-11-23 09:43:16,402 - INFO - DROP no_price: https://cellphones.com.vn/laptop-dell-vostro-3530-2h1tpi3-cu-da-kich-hoat.html
+2025-11-23 09:43:16,476 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-xiaomi-15t-pro-mipow-soft-transparent.html
+2025-11-23 09:43:16,494 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-series-10-46mm-gbs-vien-nhom-day-vai-cu-tray-xuoc.html
+2025-11-23 09:43:16,578 - INFO - DROP no_price: https://cellphones.com.vn/cap-belkin-hdmi-1-4-4k-120hz-ma-vang-24k-2m.html
+2025-11-23 09:43:16,634 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-huawei-matepad-11-5-inch-6gb-128gb-khong-ban-phim.html
+2025-11-23 09:43:16,839 - INFO - DROP no_price: https://cellphones.com.vn/may-cao-rau-kho-va-uot-philips-s5880-20-cu.html
+2025-11-23 09:43:17,547 - INFO - DROP no_price: https://cellphones.com.vn/camera-thang-may-hikvision-2mp-co-tieng-kem-dau-ghi.html
+2025-11-23 09:43:17,592 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-poco-x7-pro-5g-12gb-256gb-cu-xuoc-can.html
+2025-11-23 09:43:17,627 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-philips-25e2g2200-25-inch.html
+2025-11-23 09:43:17,687 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-dell-s2421hn-24-inch-cu-dep.html
+2025-11-23 09:43:17,710 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-huawei-watch-gt-6-day-cao-su-cu-da-kich-hoat.html
+2025-11-23 09:43:17,817 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-lite-14-al14-71m-52gq-nxj4asv001-cu-da-kich-hoat.html
+2025-11-23 09:43:17,885 - INFO - DROP no_price: https://cellphones.com.vn/loa-karaoke-xach-tay-paramax-saga.html
+2025-11-23 09:43:17,962 - INFO - DROP no_price: https://cellphones.com.vn/tai-nghe-chup-tai-gaming-edifier-cc300.html
+2025-11-23 09:43:18,034 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-xiaomi-lite-2a1c-10000mah-22-5w-bhr9350gl.html
+2025-11-23 09:43:18,067 - INFO - DROP no_price: https://cellphones.com.vn/laptop-dell-inspiron-15-3530-j9xfd-cu-xuoc-can.html
+2025-11-23 09:43:18,156 - INFO - DROP no_price: https://cellphones.com.vn/loa-vi-tinh-edifier-r30bt.html
+2025-11-23 09:43:18,159 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-yoga-slim-7-14imh9-83cv00dkvn-cu-da-kich-hoat.html
+2025-11-23 09:43:18,917 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-25000mah-145w-2c1a-m25.html
+2025-11-23 09:43:19,051 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-gaming-victus-16-d0198tx-4r0u0pa-cu-dep.html
+2025-11-23 09:43:19,131 - INFO - DROP no_price: https://cellphones.com.vn/cap-hyperdrive-touch-type-c-to-lightning-30w-mfi.html
+2025-11-23 09:43:19,143 - INFO - DROP no_price: https://cellphones.com.vn/masstel-tab-10-edu-4g-cu-dep.html
+2025-11-23 09:43:19,214 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-gaming-msi-g255f-25-inch-cu-dep.html
+2025-11-23 09:43:19,276 - INFO - DROP no_price: https://cellphones.com.vn/gia-treo-tivi-di-dong-gl-g1800-1p.html
+2025-11-23 09:43:19,317 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-vivobook-15-x1504za-nj1546w-cu-tray-xuoc.html
+2025-11-23 09:43:19,322 - INFO - DROP no_price: https://cellphones.com.vn/loa-bluetooth-havit-sk810bt.html
+2025-11-23 09:43:19,387 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-innostyle-transimini-flexcharge-10-000mah-30w-kem-cap-usb-c.html
+2025-11-23 09:43:19,410 - INFO - DROP no_price: https://cellphones.com.vn/laptop-gaming-acer-nitro-5-an515-58-5193-cu-xuoc-can.html
+2025-11-23 09:43:19,430 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-lenovo-idea-tab-pro-kem-but-ban-phim-cu-tray-xuoc.html
+2025-11-23 09:43:19,553 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-se-2-2024-40mm-4g-vien-nhom-day-cao-su-cu-dep.html
+2025-11-23 09:43:20,329 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-mophie-essentials-snap-10000mah-co-chan-dung.html
+2025-11-23 09:43:20,479 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-thinkbook-16-g8-irl-cu-dep.html
+2025-11-23 09:43:20,501 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-cuktech-10-dual-fusion-2c-9000mah-90w-ba652u.html
+2025-11-23 09:43:20,536 - INFO - DROP no_price: https://cellphones.com.vn/lot-chuot-havit-hv-mp830.html
+2025-11-23 09:43:20,558 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-thinkpad-x9-15-gen-1-21q60050vn.html
+2025-11-23 09:43:20,643 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-samsung-galaxy-tab-a11-wifi-cu-xuoc-can.html
+2025-11-23 09:43:20,713 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-gaming-v16-v3607vu-rp216w-cu-dep.html
+2025-11-23 09:43:20,741 - INFO - DROP no_price: https://cellphones.com.vn/op-airpods-4-uag-scout.html
+2025-11-23 09:43:20,742 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-envy-x360-14-fa0047au-a19bppa-cu-dep.html
+2025-11-23 09:43:20,762 - INFO - DROP no_price: https://cellphones.com.vn/loa-vi-tinh-edifier-m90.html
+2025-11-23 09:43:20,955 - INFO - DROP no_price: https://cellphones.com.vn/loa-bluetooth-tronsmart-bang-2-90w.html
+2025-11-23 09:43:20,996 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-honor-play-10-4gb-128gb.html
+2025-11-23 09:43:21,699 - INFO - DROP no_price: https://cellphones.com.vn/loa-party-alpha-works-genbeat-510.html
+2025-11-23 09:43:21,831 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-samsung-galaxy-z-fold7-pitaka-ultra-slim.html
+2025-11-23 09:43:21,926 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-teclast-t50-plus-8gb-256gb-cu-da-kich-hoat.html
+2025-11-23 09:43:21,968 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-a17-4gb-128gb-cu-da-kich-hoat.html
+2025-11-23 09:43:21,986 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-loq-15arp9-83jc00hxvn-cu-tray-xuoc.html
+2025-11-23 09:43:22,092 - INFO - DROP no_price: https://cellphones.com.vn/loa-party-alpha-works-genbeat-100.html
+2025-11-23 09:43:22,131 - INFO - DROP no_price: https://cellphones.com.vn/hub-chuyen-doi-hyperdrive-ultimate-type-c-11-in-1-gn30b.html
+2025-11-23 09:43:22,194 - INFO - DROP no_price: https://cellphones.com.vn/oppo-a17-6gb-128gb-cu-tray-xuoc.html
+2025-11-23 09:43:22,207 - INFO - DROP no_price: https://cellphones.com.vn/loa-karaoke-xach-tay-paramax-sonus-r.html
+2025-11-23 09:43:22,254 - INFO - DROP no_price: https://cellphones.com.vn/cu-sac-baseus-enerfill-2c1a-pd-100w-chan-gap-us-fe11.html
+2025-11-23 09:43:22,361 - INFO - DROP no_price: https://cellphones.com.vn/cap-innostyle-powerflex-type-c-to-c-100w-2m-icc200.html
+2025-11-23 09:43:22,511 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-loq-essential-15irx11-83sc003rvn.html
+2025-11-23 09:43:23,133 - INFO - DROP no_price: https://cellphones.com.vn/may-in-brother-dcp-t230.html
+2025-11-23 09:43:23,227 - INFO - DROP no_price: https://cellphones.com.vn/tram-sac-du-phong-ecoflow-trail-200-dc-192wh-220w.html
+2025-11-23 09:43:23,421 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-katana-15-b13udxk-2270vn-16gb-cu-dep.html
+2025-11-23 09:43:23,438 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-amazfit-active-2-premium-sapphire-day-da-cu-dep.html
+2025-11-23 09:43:23,457 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-dinh-vi-tre-em-myalo-k64-cu-xuoc-can.html
+2025-11-23 09:43:23,466 - INFO - DROP no_price: https://cellphones.com.vn/laptop-samsung-galaxy-chromebook-go-xe310xda-ka1vn.html
+2025-11-23 09:43:23,477 - INFO - DROP no_price: https://cellphones.com.vn/he-thong-mesh-wifi-6-tp-link-deco-x10-ax1500-2-pack.html
+2025-11-23 09:43:23,515 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-philips-24e2n1500-24-inch.html
+2025-11-23 09:43:23,555 - INFO - DROP no_price: https://cellphones.com.vn/loa-bluetooth-tronsmart-trip-2-10w.html
+2025-11-23 09:43:23,633 - INFO - DROP no_price: https://cellphones.com.vn/apple-macbook-air-13-m4-10cpu-10gpu-16gb-512gb-2025-cu-xuoc-can.html
+2025-11-23 09:43:23,816 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-15-fd0083tu-8d736pa-cu-da-kich-hoat.html
+2025-11-23 09:43:24,086 - INFO - DROP no_price: https://cellphones.com.vn/camera-ip-wifi-ngoai-troi-ezviz-h8c-pro-5mp-full-color-cu.html
+2025-11-23 09:43:24,661 - INFO - DROP no_price: https://cellphones.com.vn/gia-treo-tivi-di-dong-gl-ava1800-1pg.html
+2025-11-23 09:43:24,700 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-oppo-a5i-6gb-128gb-cu-tray-xuoc.html
+2025-11-23 09:43:24,757 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-swift-x-ai-oled-sfx14-72g-708x.html
+2025-11-23 09:43:24,813 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-70000mah-35w-nhieu-cong-z70se.html
+2025-11-23 09:43:24,815 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-15-fd0306tu-a2nl7pa-cu-da-kich-hoat.html
+2025-11-23 09:43:24,841 - INFO - DROP no_price: https://cellphones.com.vn/bo-sac-baseus-enercore-2c-45w-kem-cap-usb-c-rut-gon-cj11.html
+2025-11-23 09:43:24,846 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-245-g10-b8pf8at-cu-tray-xuoc.html
+2025-11-23 09:43:24,917 - INFO - DROP no_price: https://cellphones.com.vn/apple-macbook-air-13-m4-10cpu-8gpu-16gb-256gb-2025-cu-xuoc-can.html
+2025-11-23 09:43:24,987 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-iphone-16e-15-13-14-tgvis-len-with-magsafe-clear.html
+2025-11-23 09:43:25,120 - INFO - DROP no_price: https://cellphones.com.vn/cu-sac-belkin-boostcharge-pro-108w-2c2a-gan-pd-pps.html
+2025-11-23 09:43:25,426 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-a07-256gb.html
+2025-11-23 09:43:25,441 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-xiaomi-poco-x7-pro-mipow-full.html
+2025-11-23 09:43:26,062 - INFO - DROP no_price: https://cellphones.com.vn/cu-sac-innostyle-gocharge-2c1a-65w-ic65.html
+2025-11-23 09:43:26,062 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-gaming-predator-helios-16-ai-ph16-73-950c.html
+2025-11-23 09:43:26,150 - INFO - DROP no_price: https://cellphones.com.vn/qua-tang-dung-cu-massage-hinh-trai-tim-lixibox.html
+2025-11-23 09:43:26,212 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-u2-2023-49mm-4g-titan-vai-alpine-trung-cu-tray-xuoc.html
+2025-11-23 09:43:26,287 - INFO - DROP no_price: https://cellphones.com.vn/rog-xbox-ally-x-cu-da-kich-hoat.html
+2025-11-23 09:43:26,321 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-dell-ultrasharp-p2723qe-27-inch-cu-dep.html
+2025-11-23 09:43:26,395 - INFO - DROP no_price: https://cellphones.com.vn/laptop-gaming-acer-nitro-v-anv15-41-r7ap-cu-tray-xuoc.html
+2025-11-23 09:43:26,408 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-huawei-watch-fit-3-cao-su-cu-xuoc-can.html
+2025-11-23 09:43:26,428 - INFO - DROP no_price: https://cellphones.com.vn/hub-chuyen-doi-hyperdrive-flex-type-c-8-in-1-hd4102.html
+2025-11-23 09:43:26,435 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-vivobook-15-x1502va-bq886w-cu-xuoc-can.html
+2025-11-23 09:43:26,857 - INFO - DROP no_price: https://cellphones.com.vn/laptop-dell-inspiron-14-5440-n5440-c7u165w11ibd2.html
+2025-11-23 09:43:26,942 - INFO - DROP no_price: https://cellphones.com.vn/hub-chuyen-doi-hyperdrive-flex-type-c-5-in-1-hd4101.html
+2025-11-23 09:43:27,506 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-10000mah-35w-1a1c-msp13.html
+2025-11-23 09:43:27,513 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-garmin-forerunner-970-cu-da-kich-hoat.html
+2025-11-23 09:43:27,664 - INFO - DROP no_price: https://cellphones.com.vn/may-anh-fujifilm-x100vi.html
+2025-11-23 09:43:27,706 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-gaming-aspire-7-a715-59g-73lb-16gb-cu-tray-xuoc.html
+2025-11-23 09:43:27,707 - INFO - DROP no_price: https://cellphones.com.vn/loa-party-alpha-works-genbeat-110.html
+2025-11-23 09:43:27,719 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-magnetic-ultra-slim-5000mah-20w-s05.html
+2025-11-23 09:43:27,750 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-xiaomi-redmi-15-5g-8gb-256gb.html
+2025-11-23 09:43:27,870 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-nubia-air-5g-8gb-256gb-cu-da-kich-hoat.html
+2025-11-23 09:43:27,988 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-swift-x-ai-oled-sfx14-72g-79uw.html
+2025-11-23 09:43:28,003 - INFO - DROP no_price: https://cellphones.com.vn/ipad-pro-m4-11-inch-512gb-5g-ch-cu-da-kich-hoat.html
+2025-11-23 09:43:28,288 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-lg-ultragear-oled-39gx90sa-w-39-inch.html
+2025-11-23 09:43:28,544 - INFO - DROP no_price: https://cellphones.com.vn/camera-hanh-trinh-insta-360-ace-pro-2-ch-cu-da-kich-hoat.html
+2025-11-23 09:43:28,971 - INFO - DROP no_price: https://cellphones.com.vn/hub-chuyen-doi-hyperdrive-bar-type-c-6-in-1-hd22e.html
+2025-11-23 09:43:29,005 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-14-ep0220tu-b73vwpa-16gb-cu-tray-xuoc.html
+2025-11-23 09:43:29,062 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-xiaomi-15t-pro-likgus-pu-clear.html
+2025-11-23 09:43:29,069 - INFO - DROP no_price: https://cellphones.com.vn/sim-5g-viettel-5g180b-6gb-ngay.html
+2025-11-23 09:43:29,168 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-oppo-find-x9-zeelot-solidsleek-full.html
+2025-11-23 09:43:29,260 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-iphone-16e-15-13-14-mutural-silicon-with-magsafe.html
+2025-11-23 09:43:29,263 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-huawei-matepad-pro-12-2-inch-cu-tray-xuoc.html
+2025-11-23 09:43:29,270 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-xiaomi-15t-mipow-transparent-clear.html
+2025-11-23 09:43:29,377 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-coros-apex-4-42mm.html
+2025-11-23 09:43:29,461 - INFO - DROP no_price: https://cellphones.com.vn/xiaomi-poco-x3-nfc-6g-128gb-cu-tray-xuoc.html
+2025-11-23 09:43:29,789 - INFO - DROP no_price: https://cellphones.com.vn/dich-vu-apple-care-plus-macbook-pro-m5.html
+2025-11-23 09:43:29,875 - INFO - DROP no_price: https://cellphones.com.vn/iphone-16-256gb-cu-xuoc-can.html
+2025-11-23 09:43:30,309 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-70000mah-145w-2c2a-z70promax.html
+2025-11-23 09:43:30,453 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-meizu-mblu-22-pro-cu-da-kich-hoat.html
+2025-11-23 09:43:30,585 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-modern-15-h-c2rmg-287vn.html
+2025-11-23 09:43:30,610 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-honor-play-10.html
+2025-11-23 09:43:30,614 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-tuf-gaming-a15-fa506nfr-hn075w-cu-tray-xuoc.html
+2025-11-23 09:43:30,691 - INFO - DROP no_price: https://cellphones.com.vn/qua-tang-gel-duong-da-nha-dam-huong-dua-coba-300gr.html
+2025-11-23 09:43:30,718 - INFO - DROP no_price: https://cellphones.com.vn/vivo-v60-5g-12gb-256gb-cu-tray-xuoc.html
+2025-11-23 09:43:30,751 - INFO - DROP no_price: https://cellphones.com.vn/laptop-dell-15-dc15250-h02df-cu-da-kich-hoat.html
+2025-11-23 09:43:30,796 - INFO - DROP no_price: https://cellphones.com.vn/tai-nghe-co-day-edifier-p230-usb-c.html
+2025-11-23 09:43:30,876 - INFO - DROP no_price: https://cellphones.com.vn/iphone-16-512gb-cu-dep.html
+2025-11-23 09:43:31,241 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-gaming-thin-a15-b7ucx-020vn-cu-tray-xuoc.html
+2025-11-23 09:43:31,366 - INFO - DROP no_price: https://cellphones.com.vn/rog-xbox-ally-x-cu-dep.html
+2025-11-23 09:43:31,779 - INFO - DROP no_price: https://cellphones.com.vn/tay-cam-chong-rung-dji-om-5-se-cu-da-kich-hoat.html
+2025-11-23 09:43:31,866 - INFO - DROP no_price: https://cellphones.com.vn/cap-belkin-hdmi-1-4-4k-120hz-dau-nickel-2m.html
+2025-11-23 09:43:31,939 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-modern-14-f13mg-466vn-cu-da-kich-hoat.html
+2025-11-23 09:43:31,964 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-z-fold-7-5g-12gb-256gb-cu-xuoc-can.html
+2025-11-23 09:43:31,999 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-ai-a14-61m-r9ra.html
+2025-11-23 09:43:32,077 - INFO - DROP no_price: https://cellphones.com.vn/ban-phim-co-aula-s2022-pro-den.html
+2025-11-23 09:43:32,136 - INFO - DROP no_price: https://cellphones.com.vn/hub-chuyen-doi-hyperdrive-type-c-5-in-1-hd34a6.html
+2025-11-23 09:43:32,140 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-victus-15-fa1139tx-8y6w3pa-cu-xuoc-can.html
+2025-11-23 09:43:32,368 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-series-9-41mm-4g-vien-nhom-day-vai-ch-cu-dkh.html
+2025-11-23 09:43:32,411 - INFO - DROP no_price: https://cellphones.com.vn/dich-vu-apple-care-plus-ipad-pro-13-inch-m5.html
+2025-11-23 09:43:32,558 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-gaming-msi-mag-255f-e20-25-inch-cu-dep.html
+2025-11-23 09:43:32,944 - INFO - DROP no_price: https://cellphones.com.vn/oppo-a5-2025-6gb-128gb-cu-dep.html
+2025-11-23 09:43:33,217 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-innostyle-magslim-premium-10-000mah-ims10.html
+2025-11-23 09:43:33,358 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-nitro-v-anv15-41-r2up-cu-dep.html
+2025-11-23 09:43:33,373 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-series-11-46mm-size-m-l-cu-da-kich-hoat.html
+2025-11-23 09:43:33,482 - INFO - DROP no_price: https://cellphones.com.vn/cap-hyperdrive-type-c-240w-40gbbps-1-2m-hd6500.html
+2025-11-23 09:43:33,521 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-swift-go-14-ai-sfg14-75-5264.html
+2025-11-23 09:43:33,565 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-swift-x-ai-oled-sfx14-72g-77f9.html
+2025-11-23 09:43:33,685 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-series-11-46mm-ch-cu-da-kich-hoat.html
+2025-11-23 09:43:33,701 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-a26-cu-xuoc-can.html
+2025-11-23 09:43:33,734 - INFO - DROP no_price: https://cellphones.com.vn/loa-bluetooth-havit-sk907bt.html
+2025-11-23 09:43:33,975 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-oppo-reno14-f-cu-xuoc-can.html
+2025-11-23 09:43:34,149 - INFO - DROP no_price: https://cellphones.com.vn/vivo-v60-5g-12gb-512gb-cu-tray-xuoc.html
+2025-11-23 09:43:34,286 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-meizu-mblu-note-21-pro-cu-da-kich-hoat.html
+2025-11-23 09:43:34,787 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-golf-10000mah-22-5w-p51.html
+2025-11-23 09:43:34,848 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-v14-g4-iah-83fr000uvn-cu-tray-xuoc.html
+2025-11-23 09:43:34,884 - INFO - DROP no_price: https://cellphones.com.vn/laptop-gigabyte-g6-kf-73vn854kh-cu-dep.html
+2025-11-23 09:43:34,961 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-oppo-find-x8-12gb-256gb-cu-dep.html
+2025-11-23 09:43:34,967 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-teclast-m50-plus-cu-xuoc-can.html
+2025-11-23 09:43:35,019 - INFO - DROP no_price: https://cellphones.com.vn/cap-innostyle-digipower-type-c-to-lightning-pd-30w-cl301.html
+2025-11-23 09:43:35,066 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-20000mah-65w-1a1c-msp14.html
+2025-11-23 09:43:35,074 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-venture-14-ai-a1mg-005vn-cu-da-kich-hoat.html
+2025-11-23 09:43:35,091 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-thinkpad-e14-gen-7-21t90021va-cu-da-kich-hoat.html
+2025-11-23 09:43:35,257 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-xiaomi-redmi-15c-full.html
+2025-11-23 09:43:35,577 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-rog-strix-g16-g614ju-n3777w-cu-tray-xuoc.html
+2025-11-23 09:43:35,884 - INFO - DROP no_price: https://cellphones.com.vn/may-anh-canon-eos-r100-cu.html
+2025-11-23 09:43:36,098 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-v15-g5-irl-83hf00byvn.html
+2025-11-23 09:43:36,127 - INFO - DROP no_price: https://cellphones.com.vn/hub-chuyen-doi-hyperdrive-net-type-c-6-in-2-gn28n.html
+2025-11-23 09:43:36,322 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-coros-apex-4.html
+2025-11-23 09:43:36,396 - INFO - DROP no_price: https://cellphones.com.vn/samsung-galaxy-watch-ultra-2025-cu-da-kich-hoat.html
+2025-11-23 09:43:36,442 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-victus-15-fa2731tx-b85lnpa-cu-da-kich-hoat.html
+2025-11-23 09:43:36,509 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-infinix-hot-40i-8gb-256gb-cu-xuoc-can.html
+2025-11-23 09:43:36,509 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-cong-msi-pro-mp341cq-cu-dep.html
+2025-11-23 09:43:36,588 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-lenovo-tab-4gb-64gb-zaeh0147vn-kem-bao-da-cu-dep.html
+2025-11-23 09:43:36,588 - INFO - [cellphones] Parse ok: 10, drop: 290
+2025-11-23 09:43:36,588 - INFO - Đang crawl site: thegioididong
+2025-11-23 09:45:34,167 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2021-6?page=1
+2025-11-23 09:45:53,572 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2021-7?page=1
+2025-11-23 09:47:50,545 - INFO - === Bắt đầu crawl TGDD ===
+2025-11-23 09:49:27,893 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2021-7?page=4
+2025-11-23 09:52:29,424 - INFO - === Bắt đầu crawl dữ liệu laptop ===
+2025-11-23 09:52:29,424 - INFO - Đang crawl site: cellphones
+2025-11-23 09:52:32,848 - INFO - [cellphones] từ sitemap: 300 URL sản phẩm
+2025-11-23 09:52:32,955 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop (404)
+2025-11-23 09:52:33,082 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=2 (404)
+2025-11-23 09:52:33,195 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=3 (404)
+2025-11-23 09:52:33,306 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=4 (404)
+2025-11-23 09:52:33,419 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=5 (404)
+2025-11-23 09:52:33,515 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=6 (404)
+2025-11-23 09:52:33,629 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=7 (404)
+2025-11-23 09:52:33,741 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=8 (404)
+2025-11-23 09:52:33,741 - INFO - [cellphones] từ danh mục: +0 URL sản phẩm (seed: https://cellphones.com.vn/laptop/)
+2025-11-23 09:52:33,743 - INFO - [cellphones] Tổng URL ứng viên cuối: 300
+2025-11-23 09:52:35,135 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:52:35,142 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:52:36,334 - INFO - DROP no_price: https://cellphones.com.vn/may-in-laser-mau-brother-hl-3280cdw.html
+2025-11-23 09:52:36,405 - INFO - DROP no_price: https://cellphones.com.vn/may-in-brother-dcp-t230.html
+2025-11-23 09:52:36,537 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-dinh-vi-tre-em-myalo-k64-cu-xuoc-can.html
+2025-11-23 09:52:36,563 - INFO - DROP no_price: https://cellphones.com.vn/loa-vi-tinh-edifier-r30bt.html
+2025-11-23 09:52:37,008 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-swift-x-ai-oled-sfx14-72g-708x.html
+2025-11-23 09:52:37,030 - INFO - DROP no_price: https://cellphones.com.vn/laptop-dell-vostro-3530-2h1tpi5-16gb-cu-tray-xuoc.html
+2025-11-23 09:52:37,096 - INFO - DROP no_price: https://cellphones.com.vn/hub-chuyen-doi-hyperdrive-ultimate-type-c-11-in-1-gn30b.html
+2025-11-23 09:52:37,206 - INFO - DROP no_price: https://cellphones.com.vn/oppo-a17-6gb-128gb-cu-tray-xuoc.html
+2025-11-23 09:52:37,224 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-teclast-t50-plus-8gb-256gb-cu-da-kich-hoat.html
+2025-11-23 09:52:38,666 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:52:39,355 - INFO - DROP no_price: https://cellphones.com.vn/tram-sac-du-phong-ecoflow-trail-200-dc-192wh-220w.html
+2025-11-23 09:52:39,391 - INFO - DROP no_price: https://cellphones.com.vn/loa-karaoke-xach-tay-paramax-sonus-r.html
+2025-11-23 09:52:40,098 - INFO - DROP no_price: https://cellphones.com.vn/may-massage-co-vai-gay-philips-ppm3306-cu.html
+2025-11-23 09:52:40,117 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-xiaomi-redmi-turbo-3-12gb-256gb-cu-xuoc-can.html
+2025-11-23 09:52:40,120 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-swift-go-14-ai-sfg14-75-5264.html
+2025-11-23 09:52:40,135 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-xiaomi-15t-pro-likgus-pu-clear.html
+2025-11-23 09:52:41,282 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:52:41,725 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-swift-x-ai-oled-sfx14-72g-77f9.html
+2025-11-23 09:52:41,726 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-samsung-galaxy-tab-a11-wifi-cu-xuoc-can.html
+2025-11-23 09:52:41,836 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-philips-27e2g2200-27-inch-cu-da-kich-hoat.html
+2025-11-23 09:52:42,623 - INFO - DROP no_price: https://cellphones.com.vn/cap-innostyle-digipower-type-c-to-lightning-pd-30w-cl301.html
+2025-11-23 09:52:43,019 - INFO - DROP no_price: https://cellphones.com.vn/apple-macbook-air-15-m4-10cpu-10gpu-24gb-512gb-2025-ch-cu-dkh.html
+2025-11-23 09:52:43,033 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-xiaomi-lite-2a1c-10000mah-22-5w-bhr9350gl.html
+2025-11-23 09:52:43,099 - INFO - DROP no_price: https://cellphones.com.vn/oppo-a5-2025-6gb-128gb-cu-dep.html
+2025-11-23 09:52:43,111 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-cuktech-10-dual-fusion-2c-9000mah-90w-ba652u.html
+2025-11-23 09:52:43,118 - INFO - DROP no_price: https://cellphones.com.vn/sim-5g-viettel-5g180b-6gb-ngay.html
+2025-11-23 09:52:43,153 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:52:43,200 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-xiaomi-redmi-15c-full.html
+2025-11-23 09:52:43,232 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-gaming-predator-helios-16-ai-ph16-73-93hd.html
+2025-11-23 09:52:43,270 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-10000mah-22-5w-q10plus.html
+2025-11-23 09:52:43,493 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-xiaomi-15t-15t-pro-mipow-full.html
+2025-11-23 09:52:44,387 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-xiaomi-15-5g-12gb-512gb-cu-tray-xuoc.html
+2025-11-23 09:52:44,495 - INFO - DROP no_price: https://cellphones.com.vn/dich-vu-apple-care-plus-ipad-pro-13-inch-m5.html
+2025-11-23 09:52:44,525 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-series-9-41mm-4g-vien-nhom-day-vai-ch-cu-dkh.html
+2025-11-23 09:52:44,540 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-prestige-13-ai-ukiyoe-edition-a2vmg-075vn.html
+2025-11-23 09:52:44,599 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-gaming-thin-a15-b7ucx-020vn-cu-tray-xuoc.html
+2025-11-23 09:52:44,631 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-modern-15-h-c2rmg-287vn.html
+2025-11-23 09:52:44,652 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-garmin-forerunner-970-cu-da-kich-hoat.html
+2025-11-23 09:52:44,705 - INFO - DROP no_price: https://cellphones.com.vn/may-cao-rau-kho-va-uot-philips-s5880-20-cu.html
+2025-11-23 09:52:44,731 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-magnetic-ultra-slim-5000mah-20w-s05.html
+2025-11-23 09:52:44,753 - INFO - DROP no_price: https://cellphones.com.vn/loa-party-alpha-works-genbeat-110.html
+2025-11-23 09:52:44,785 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-oppo-a5i-4gb-128gb-cu-dep.html
+2025-11-23 09:52:45,066 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-honor-play-10.html
+2025-11-23 09:52:45,789 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-magnetic-ultra-slim-10000mah-20w-s10.html
+2025-11-23 09:52:45,898 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-itel-isw-o11-cu-dep.html
+2025-11-23 09:52:45,926 - INFO - DROP no_price: https://cellphones.com.vn/gia-do-laptop-macbook-wiwu-zm-902.html
+2025-11-23 09:52:45,935 - INFO - DROP no_price: https://cellphones.com.vn/tai-nghe-bluetooth-chup-tai-edifier-evobuds.html
+2025-11-23 09:52:45,935 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-victus-15-fa1139tx-8y6w3pa-cu-xuoc-can.html
+2025-11-23 09:52:46,022 - INFO - DROP no_price: https://cellphones.com.vn/loa-bluetooth-havit-sk810bt.html
+2025-11-23 09:52:46,053 - INFO - DROP no_price: https://cellphones.com.vn/oppo-a5-pro-5g-8gb-256gb-cu-dep.html
+2025-11-23 09:52:46,128 - INFO - DROP no_price: https://cellphones.com.vn/may-in-laser-mau-brother-dcp-3560cdw.html
+2025-11-23 09:52:46,148 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-iphone-16e-15-13-14-tgvis-len-with-magsafe-clear.html
+2025-11-23 09:52:46,229 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-swift-x-ai-oled-sfx14-72g-79uw.html
+2025-11-23 09:52:46,317 - INFO - DROP no_price: https://cellphones.com.vn/vi-magsafe-iphone-uag-metropolis-pu.html
+2025-11-23 09:52:46,681 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-modern-14-f13mg-466vn-cu-da-kich-hoat.html
+2025-11-23 09:52:47,173 - INFO - DROP no_price: https://cellphones.com.vn/cap-innostyle-digipower-type-c-to-c-pd-100w-cc1001.html
+2025-11-23 09:52:47,287 - INFO - DROP no_price: https://cellphones.com.vn/ipad-air-m3-11-inch-512gb-cu-dep.html
+2025-11-23 09:52:47,340 - INFO - DROP no_price: https://cellphones.com.vn/hub-chuyen-doi-hyperdrive-flex-type-c-5-in-1-hd4101.html
+2025-11-23 09:52:47,362 - INFO - DROP no_price: https://cellphones.com.vn/hub-chuyen-doi-hyperdrive-type-c-5-in-1-hd34a6.html
+2025-11-23 09:52:47,392 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-dell-s2421hn-24-inch-cu-dep.html
+2025-11-23 09:52:47,392 - INFO - DROP no_price: https://cellphones.com.vn/vivo-y100-128gb-cu-xuoc-can.html
+2025-11-23 09:52:47,420 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-lite-14-al14-71m-52gq-nxj4asv001-cu-da-kich-hoat.html
+2025-11-23 09:52:47,482 - INFO - DROP no_price: https://cellphones.com.vn/cu-sac-belkin-boostcharge-pro-70w-2c1a-gan-pd3-1.html
+2025-11-23 09:52:47,573 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-go-14-ag14-72p-563l.html
+2025-11-23 09:52:47,609 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-gaming-predator-helios-16-ai-ph16-73-950c.html
+2025-11-23 09:52:47,804 - INFO - DROP no_price: https://cellphones.com.vn/tai-nghe-co-day-edifier-p230-usb-c.html
+2025-11-23 09:52:48,034 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-oppo-find-x9-pro-zeelot-solidsleek-full.html
+2025-11-23 09:52:48,611 - INFO - DROP no_price: https://cellphones.com.vn/apple-ipad-pro-11-2020-4g-256-gb-cu-tray-xuoc.html
+2025-11-23 09:52:48,640 - INFO - DROP no_price: https://cellphones.com.vn/loa-karaoke-xach-tay-paramax-sonus.html
+2025-11-23 09:52:48,776 - INFO - DROP no_price: https://cellphones.com.vn/samsung-galaxy-z-flip-6-512gb-cu-xuoc-can.html
+2025-11-23 09:52:48,806 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-honor-pad-10.html
+2025-11-23 09:52:48,811 - INFO - DROP no_price: https://cellphones.com.vn/macbook-air-13-m4-10cpu-10gpu-24gb-512gb-2025-70w-ch-cu-dkh.html
+2025-11-23 09:52:48,866 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-thinkbook-16-g8-irl-cu-dep.html
+2025-11-23 09:52:48,869 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-vivobook-15-x1502va-bq886w-cu-xuoc-can.html
+2025-11-23 09:52:48,956 - INFO - DROP no_price: https://cellphones.com.vn/cap-hyperjuice-type-c-to-c-240w-2m.html
+2025-11-23 09:52:48,956 - INFO - DROP no_price: https://cellphones.com.vn/masstel-tab-10-edu-4g-cu-dep.html
+2025-11-23 09:52:49,050 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-tecno-camon-40-pro-8gb-256gb-cu-xuoc-can.html
+2025-11-23 09:52:49,097 - INFO - DROP no_price: https://cellphones.com.vn/loa-vi-tinh-edifier-s450db.html
+2025-11-23 09:52:49,491 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-xiaomi-15t-pro-mipow-transparent-clear.html
+2025-11-23 09:52:50,060 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-z-fold-7-12gb-512gb-cu-tray-xuoc.html
+2025-11-23 09:52:50,111 - INFO - DROP no_price: https://cellphones.com.vn/bo-sac-baseus-enercore-3c-67w-kem-cap-usb-c-rut-gon-cj11.html
+2025-11-23 09:52:50,209 - INFO - DROP no_price: https://cellphones.com.vn/loa-bluetooth-tronsmart-trip-2-10w.html
+2025-11-23 09:52:50,212 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-nothing-phone-3a-cu-tray-xuoc.html
+2025-11-23 09:52:50,218 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-z-flip-7-5g-12gb-256gb-cu-dep.html
+2025-11-23 09:52:50,286 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-huawei-watch-gt-6-day-cao-su-cu-da-kich-hoat.html
+2025-11-23 09:52:50,349 - INFO - DROP no_price: https://cellphones.com.vn/may-anh-fujifilm-x100vi.html
+2025-11-23 09:52:50,367 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-pavilion-x360-14-ek0132tu-7c0w4pa-cu-tray-xuoc.html
+2025-11-23 09:52:50,407 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-swift-x-sfx14-71g-78sy.html
+2025-11-23 09:52:50,407 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-xiaomi-redmi-15-5g-8gb-256gb.html
+2025-11-23 09:52:50,494 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-oppo-find-x8-256gb-cu-xuoc-can.html
+2025-11-23 09:52:51,047 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-amazfit-active-2-premium-sapphire-day-da-cu-dep.html
+2025-11-23 09:52:51,463 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-v14-g4-iah-83fr000uvn-cu-tray-xuoc.html
+2025-11-23 09:52:51,523 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-philips-32e1n3500-32-inch.html
+2025-11-23 09:52:51,558 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-coros-nomad.html
+2025-11-23 09:52:51,607 - INFO - DROP no_price: https://cellphones.com.vn/apple-macbook-air-13-m4-10cpu-8gpu-16gb-256gb-2025-cu-xuoc-can.html
+2025-11-23 09:52:51,629 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-robot-10000mah-15w-tich-hop-cap-type-c-rt102.html
+2025-11-23 09:52:51,733 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-go-15-ag15-72p-776j.html
+2025-11-23 09:52:51,741 - INFO - DROP no_price: https://cellphones.com.vn/ipad-air-m3-11-inch-5g-128gb-2025-cu-xuoc-can.html
+2025-11-23 09:52:51,766 - INFO - DROP no_price: https://cellphones.com.vn/router-wifi-7-tp-link-archer-be220-be3600-bang-tan-kep.html
+2025-11-23 09:52:51,794 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-gaming-samsung-odyssey-g3-g30d-ls24dg302eexxv-24-inch-cu-da-kich-hoat.html
+2025-11-23 09:52:51,980 - INFO - DROP no_price: https://cellphones.com.vn/cu-sac-innostyle-gocharge-2c1a-65w-ic65.html
+2025-11-23 09:52:52,083 - INFO - DROP no_price: https://cellphones.com.vn/mainboard-gigabyte-b860m-k-ddr5.html
+2025-11-23 09:52:52,507 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-lite-15-al15-42p-r8e6.html
+2025-11-23 09:52:52,877 - INFO - DROP no_price: https://cellphones.com.vn/op-airpods-4-uag-scout.html
+2025-11-23 09:52:52,993 - INFO - DROP no_price: https://cellphones.com.vn/vong-giu-dien-thoai-uag-monarch-magnetic-2.html
+2025-11-23 09:52:53,013 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-sony-xperia-10-vii.html
+2025-11-23 09:52:53,073 - INFO - DROP no_price: https://cellphones.com.vn/tay-cam-chong-rung-dji-om-5-se-cu-da-kich-hoat.html
+2025-11-23 09:52:53,102 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-predator-triton-neo-16-ptn16-51-78jq.html
+2025-11-23 09:52:53,124 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-cyborg-15-a13uc-2088vn.html
+2025-11-23 09:52:53,228 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-25000mah-145w-2c1a-m25.html
+2025-11-23 09:52:53,254 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-z-flip-7-5g-12gb-256gb-cu-tray-xuoc.html
+2025-11-23 09:52:53,412 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-series-11-46mm-size-m-l-cu-da-kich-hoat.html
+2025-11-23 09:52:53,526 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-tecno-spark-40-cu-dep.html
+2025-11-23 09:52:53,605 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-loq-essential-15irx11-83sc003rvn.html
+2025-11-23 09:52:54,105 - INFO - DROP no_price: https://cellphones.com.vn/tram-sac-du-phong-ecoflow-trail-300-dc-288wh-300w.html
+2025-11-23 09:52:54,374 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-245-g10-b8pf8at-cu-tray-xuoc.html
+2025-11-23 09:52:54,410 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-70000mah-35w-nhieu-cong-z70se.html
+2025-11-23 09:52:54,434 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-series-11-46mm-ch-cu-da-kich-hoat.html
+2025-11-23 09:52:54,537 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-tuf-gaming-a15-fa506nfr-hn075w-cu-tray-xuoc.html
+2025-11-23 09:52:54,571 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-a17-4gb-128gb-cu-da-kich-hoat.html
+2025-11-23 09:52:54,574 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-teclast-m50-plus-cu-xuoc-can.html
+2025-11-23 09:52:54,698 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-oppo-a5i-6gb-128gb-cu-tray-xuoc.html
+2025-11-23 09:52:54,741 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-honor-play-10-4gb-128gb.html
+2025-11-23 09:52:54,860 - INFO - DROP no_price: https://cellphones.com.vn/ban-phim-thong-minh-huawei-matepad-11-5.html
+2025-11-23 09:52:54,892 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-innostyle-transimini-flexcharge-10-000mah-30w-kem-cap-usb-c.html
+2025-11-23 09:52:54,959 - INFO - DROP no_price: https://cellphones.com.vn/xiaomi-poco-x3-nfc-6g-128gb-cu-tray-xuoc.html
+2025-11-23 09:52:55,409 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-gaming-victus-16-d0198tx-4r0u0pa-cu-dep.html
+2025-11-23 09:52:55,769 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-swift-edge-14-ai-sfe14-51t-52kd.html
+2025-11-23 09:52:55,848 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-magnetic-slim-10000mah-22-5w-s10plus.html
+2025-11-23 09:52:55,871 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-yoga-slim-7-14imh9-83cv00dkvn-cu-da-kich-hoat.html
+2025-11-23 09:52:55,993 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-philips-25e2g2200-25-inch.html
+2025-11-23 09:52:55,996 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-15-fd0306tu-a2nl7pa-cu-da-kich-hoat.html
+2025-11-23 09:52:56,041 - INFO - DROP no_price: https://cellphones.com.vn/he-thong-mesh-wifi-6-tp-link-deco-x10-ax1500-2-pack.html
+2025-11-23 09:52:56,082 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-5-a514-56p-35x7-nx-khrsv-001-cu-tray-xuoc.html
+2025-11-23 09:52:56,149 - INFO - DROP no_price: https://cellphones.com.vn/loa-vi-tinh-edifier-m90.html
+2025-11-23 09:52:56,194 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-honor-400-5g-12gb-512gb-cu-da-kich-hoat.html
+2025-11-23 09:52:56,294 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-20000mah-65w-1a1c-msp14.html
+2025-11-23 09:52:56,441 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-nubia-air-5g-8gb-256gb-cu-da-kich-hoat.html
+2025-11-23 09:52:56,732 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-thinkpad-e14-gen-7-21t90021va-cu-da-kich-hoat.html
+2025-11-23 09:52:57,179 - INFO - DROP no_price: https://cellphones.com.vn/loa-bluetooth-havit-sk907bt.html
+2025-11-23 09:52:57,350 - INFO - DROP no_price: https://cellphones.com.vn/camera-hanh-trinh-insta-360-ace-pro-2-ch-cu-da-kich-hoat.html
+2025-11-23 09:52:57,356 - INFO - DROP no_price: https://cellphones.com.vn/hub-chuyen-doi-hyperdrive-bar-type-c-6-in-1-hd22e.html
+2025-11-23 09:52:57,383 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-xiaomi-15-cu-xuoc-can.html
+2025-11-23 09:52:57,406 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-meizu-mblu-22-pro-cu-da-kich-hoat.html
+2025-11-23 09:52:57,435 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-baseus-airpow-fast-charge-10000mah-20w.html
+2025-11-23 09:52:57,443 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-ultra-2-2024-49mm-4g-titan-trail-ch-cu-dkh.html
+2025-11-23 09:52:57,636 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-loq-15arp9-83jc00hxvn-cu-tray-xuoc.html
+2025-11-23 09:52:57,666 - INFO - DROP no_price: https://cellphones.com.vn/laptop-samsung-galaxy-chromebook-go-xe310xda-ka1vn.html
+2025-11-23 09:52:57,790 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-xiaomi-15t-pro-mipow-soft-transparent.html
+2025-11-23 09:52:57,949 - INFO - DROP no_price: https://cellphones.com.vn/qua-tang-gel-duong-da-nha-dam-huong-dua-coba-300gr.html
+2025-11-23 09:52:58,316 - INFO - DROP no_price: https://cellphones.com.vn/vivo-v40-5g-12gb-256gb-cu-dep.html
+2025-11-23 09:52:58,612 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-xiaomi-15t-likgus-pu-clear.html
+2025-11-23 09:52:58,654 - INFO - DROP no_price: https://cellphones.com.vn/iphone-16-256gb-cu-xuoc-can.html
+2025-11-23 09:52:58,696 - INFO - DROP no_price: https://cellphones.com.vn/camera-thang-may-hikvision-4mp-co-tieng.html
+2025-11-23 09:52:58,698 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-legion-7-16iax10-83ky001uvn-cu-da-kich-hoat.html
+2025-11-23 09:52:58,722 - INFO - DROP no_price: https://cellphones.com.vn/ipad-air-6-m2-13-inch-512gb-5g-cu-dep.html
+2025-11-23 09:52:58,795 - INFO - DROP no_price: https://cellphones.com.vn/laptop-gigabyte-g6-kf-73vn854kh-cu-dep.html
+2025-11-23 09:52:58,878 - INFO - DROP no_price: https://cellphones.com.vn/rog-xbox-ally-x-cu-da-kich-hoat.html
+2025-11-23 09:52:59,185 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-huawei-matepad-11-5-inch-6gb-128gb-khong-ban-phim.html
+2025-11-23 09:52:59,210 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-oppo-find-x8-12gb-256gb-cu-dep.html
+2025-11-23 09:52:59,267 - INFO - DROP no_price: https://cellphones.com.vn/bo-sac-baseus-enercore-2c-45w-kem-cap-usb-c-rut-gon-cj11.html
+2025-11-23 09:52:59,393 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-innostyle-magslim-premium-10-000mah-ims10.html
+2025-11-23 09:52:59,672 - INFO - DROP no_price: https://cellphones.com.vn/ban-phim-co-aula-s2022-pro-den.html
+2025-11-23 09:52:59,956 - INFO - DROP no_price: https://cellphones.com.vn/cap-belkin-hdmi-1-4-4k-120hz-dau-nickel-2m.html
+2025-11-23 09:53:00,001 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-tecno-spark-40-pro-plus-8gb-256gb-cu-dep.html
+2025-11-23 09:53:00,098 - INFO - DROP no_price: https://cellphones.com.vn/loa-party-alpha-works-genbeat-510.html
+2025-11-23 09:53:00,158 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-dinh-vi-tre-em-wonlex-kt34-cu-dep.html
+2025-11-23 09:53:00,224 - INFO - DROP no_price: https://cellphones.com.vn/laptop-gaming-acer-nitro-v-anv15-41-r7ap-cu-tray-xuoc.html
+2025-11-23 09:53:00,261 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-gaming-lg-ultragear-24gs60f-b-24-inch-cu-da-kich-hoat.html
+2025-11-23 09:53:00,357 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-lg-ultragear-oled-39gx90sa-w-39-inch.html
+2025-11-23 09:53:00,428 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-infinix-hot-40i-8gb-256gb-cu-xuoc-can.html
+2025-11-23 09:53:00,766 - INFO - DROP no_price: https://cellphones.com.vn/hub-chuyen-doi-hyperdrive-net-type-c-6-in-2-gn28n.html
+2025-11-23 09:53:00,846 - INFO - DROP no_price: https://cellphones.com.vn/honor-x5-plus-cu-xuoc-can.html
+2025-11-23 09:53:01,020 - INFO - DROP no_price: https://cellphones.com.vn/vivo-v60-5g-12gb-512gb-cu-tray-xuoc.html
+2025-11-23 09:53:01,230 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-xiaomi-15t-mipow-transparent-clear.html
+2025-11-23 09:53:01,232 - INFO - DROP no_price: https://cellphones.com.vn/laptop-dell-15-dc15250-3g7t0-cu-dep.html
+2025-11-23 09:53:01,261 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-golf-10000mah-22-5w-p51.html
+2025-11-23 09:53:01,390 - INFO - DROP no_price: https://cellphones.com.vn/loa-karaoke-xach-tay-paramax-saga.html
+2025-11-23 09:53:01,459 - INFO - DROP no_price: https://cellphones.com.vn/loa-bluetooth-tronsmart-bang-2-90w.html
+2025-11-23 09:53:01,557 - INFO - DROP no_price: https://cellphones.com.vn/dich-vu-apple-care-plus-macbook-pro-m5.html
+2025-11-23 09:53:01,696 - INFO - DROP no_price: https://cellphones.com.vn/ipad-pro-m4-11-inch-512gb-5g-ch-cu-da-kich-hoat.html
+2025-11-23 09:53:01,740 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-70000mah-145w-2c2a-z70promax.html
+2025-11-23 09:53:01,860 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-10000mah-35w-1a1c-msp13.html
+2025-11-23 09:53:02,121 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-go-14-ai-ag14-71m-57wr-cu-da-kich-hoat.html
+2025-11-23 09:53:02,433 - INFO - DROP no_price: https://cellphones.com.vn/laptop-gigabyte-gaming-a16-ga6h-cvhi3vn893sh.html
+2025-11-23 09:53:02,552 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-coros-apex-4.html
+2025-11-23 09:53:02,619 - INFO - DROP no_price: https://cellphones.com.vn/laptop-dell-inspiron-14-5440-n5440-c7u165w11ibd2.html
+2025-11-23 09:53:02,634 - INFO - DROP no_price: https://cellphones.com.vn/vivo-x70-pro-plus-5g-12gb-256gb-cu-tray-xuoc.html
+2025-11-23 09:53:02,683 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-loq-15iax9e-83lk0079vn-cu-dep.html
+2025-11-23 09:53:02,705 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-tuf-gaming-a15-fa506nf-hn005w-cu-xuoc-can.html
+2025-11-23 09:53:02,761 - INFO - DROP no_price: https://cellphones.com.vn/mainboard-asus-prime-b860m-k-ddr5.html
+2025-11-23 09:53:02,836 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-5-a515-58p-71ej.html
+2025-11-23 09:53:03,013 - INFO - DROP no_price: https://cellphones.com.vn/dich-vu-apple-care-plus-ipad-pro-11-inch-m5.html
+2025-11-23 09:53:03,095 - INFO - DROP no_price: https://cellphones.com.vn/apple-airpods-max-2021-cu-dep.html
+2025-11-23 09:53:03,150 - INFO - DROP no_price: https://cellphones.com.vn/qua-tang-dung-cu-massage-hinh-trai-tim-lixibox.html
+2025-11-23 09:53:03,711 - INFO - DROP no_price: https://cellphones.com.vn/cu-sac-baseus-enerfill-2c1a-pd-100w-chan-gap-us-fe11.html
+2025-11-23 09:53:03,742 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-a26-8gb-256gb-cu-dep.html
+2025-11-23 09:53:03,781 - INFO - DROP no_price: https://cellphones.com.vn/vivo-v60-5g-12gb-256gb-cu-tray-xuoc.html
+2025-11-23 09:53:03,863 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-honor-pad-x7-cu-da-kich-hoat.html
+2025-11-23 09:53:03,960 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-tuf-gaming-f16-fx607ju-n3139w-cu-dep.html
+2025-11-23 09:53:04,014 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-huawei-watch-fit-3-cao-su-cu-xuoc-can.html
+2025-11-23 09:53:04,089 - INFO - DROP no_price: https://cellphones.com.vn/sim-5g-viettel-12t5g180b-6gb-ngay.html
+2025-11-23 09:53:04,270 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-dinh-vi-tre-em-wonlex-ct24-cu-tray-xuoc.html
+2025-11-23 09:53:04,333 - INFO - DROP no_price: https://cellphones.com.vn/laptop-gaming-acer-nitro-5-an515-58-5193-cu-xuoc-can.html
+2025-11-23 09:53:04,546 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-ai-a14-61m-r9ra.html
+2025-11-23 09:53:04,602 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-rog-strix-g16-g614ju-n3777w-cu-tray-xuoc.html
+2025-11-23 09:53:04,687 - INFO - DROP no_price: https://cellphones.com.vn/laptop-samsung-galaxy-chromebook-go-xe340xda-ka1vn.html
+2025-11-23 09:53:05,102 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-coros-apex-4-42mm.html
+2025-11-23 09:53:05,219 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-lenovo-idea-tab-pro-kem-but-ban-phim-cu-tray-xuoc.html
+2025-11-23 09:53:05,250 - INFO - DROP no_price: https://cellphones.com.vn/noi-chien-khong-dau-gaabor-af-80t01a-6-2-lit-cu.html
+2025-11-23 09:53:05,284 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-katana-15-b13udxk-2270vn-16gb-cu-dep.html
+2025-11-23 09:53:05,313 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-golf-20000mah-22-5w-p52.html
+2025-11-23 09:53:05,347 - INFO - DROP no_price: https://cellphones.com.vn/loa-party-alpha-works-genbeat-100.html
+2025-11-23 09:53:05,370 - INFO - DROP no_price: https://cellphones.com.vn/hub-chuyen-doi-hyperdrive-flex-type-c-8-in-1-hd4102.html
+2025-11-23 09:53:05,707 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-venture-14-ai-a1mg-005vn-cu-da-kich-hoat.html
+2025-11-23 09:53:05,829 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-xiaomi-redmi-pad-2-pro-zeelot-solidsleek-full.html
+2025-11-23 09:53:06,036 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-loq-15iax9-83gs00dbvn-cu-tray-xuoc.html
+2025-11-23 09:53:06,093 - INFO - DROP no_price: https://cellphones.com.vn/cap-belkin-hdmi-1-4-4k-120hz-ma-vang-24k-2m.html
+2025-11-23 09:53:06,208 - INFO - DROP no_price: https://cellphones.com.vn/gia-treo-tivi-di-dong-gl-g1800-1p.html
+2025-11-23 09:53:06,632 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-philips-24e2n1500-24-inch.html
+2025-11-23 09:53:06,649 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-xiaomi-poco-f8-pro-zeelot-solidsleek-full.html
+2025-11-23 09:53:06,656 - INFO - DROP no_price: https://cellphones.com.vn/laptop-dell-inspiron-15-3520-6r6nk-cu-xuoc-can.html
+2025-11-23 09:53:06,697 - INFO - DROP no_price: https://cellphones.com.vn/may-in-laser-mau-brother-hl-3240cdw.html
+2025-11-23 09:53:06,802 - INFO - DROP no_price: https://cellphones.com.vn/combo-camera-hanh-dong-dji-action-4-ch-cu-da-kich-hoat.html
+2025-11-23 09:53:06,833 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-dinh-vi-tre-em-myalo-k64-cu-tray-xuoc.html
+2025-11-23 09:53:06,865 - INFO - DROP no_price: https://cellphones.com.vn/cap-hyperdrive-type-c-240w-40gbbps-1-2m-hd6500.html
+2025-11-23 09:53:07,032 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-envy-x360-14-fa0047au-a19bppa-cu-dep.html
+2025-11-23 09:53:07,291 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-ultra-2-2024-49mm-4g-vien-titan-day-alpine-m-cu-dep.html
+2025-11-23 09:53:07,491 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-modern-15-h-ai-c2hmg-220vn.html
+2025-11-23 09:53:07,504 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-iphone-16e-15-13-14-mutural-silicon-with-magsafe.html
+2025-11-23 09:53:07,709 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-z-fold-7-5g-12gb-256gb-cu-xuoc-can.html
+2025-11-23 09:53:08,002 - INFO - DROP no_price: https://cellphones.com.vn/may-anh-canon-eos-r100-cu.html
+2025-11-23 09:53:08,039 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-se-2-2024-40mm-vien-nhom-day-cao-su-size-m-l-ch-cu-da-kich-hoat.html
+2025-11-23 09:53:08,103 - INFO - DROP no_price: https://cellphones.com.vn/camera-thang-may-hikvision-2mp-co-tieng-kem-dau-ghi.html
+2025-11-23 09:53:08,137 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-dell-ultrasharp-p2723qe-27-inch-cu-dep.html
+2025-11-23 09:53:08,221 - INFO - DROP no_price: https://cellphones.com.vn/macbook-air-15-m3-24gb-512gb-2024-35w-cu-dep.html
+2025-11-23 09:53:08,276 - INFO - DROP no_price: https://cellphones.com.vn/may-cao-rau-enchen-mini-x-cu.html
+2025-11-23 09:53:08,309 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-u2-2023-49mm-4g-titan-vai-alpine-trung-cu-tray-xuoc.html
+2025-11-23 09:53:08,334 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-oppo-find-x9-zeelot-solidsleek-full.html
+2025-11-23 09:53:08,755 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-cong-msi-pro-mp341cq-cu-dep.html
+2025-11-23 09:53:08,896 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-gaming-lg-ultragear-24gs65f-24-inch-cu-dep.html
+2025-11-23 09:53:09,062 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-meizu-mblu-note-21-pro-cu-da-kich-hoat.html
+2025-11-23 09:53:09,292 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-vivobook-15-x1504za-nj1546w-cu-tray-xuoc.html
+2025-11-23 09:53:09,314 - INFO - DROP no_price: https://cellphones.com.vn/camera-ip-wifi-ngoai-troi-ezviz-h8c-pro-5mp-full-color-cu.html
+2025-11-23 09:53:09,525 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-honor-x9d.html
+2025-11-23 09:53:09,539 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-dong-stargo-gem-power-20000mah-22-5w.html
+2025-11-23 09:53:09,665 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-series-10-46mm-gbs-vien-nhom-day-vai-cu-tray-xuoc.html
+2025-11-23 09:53:09,669 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-14-ep0220tu-b73vwpa-16gb-cu-tray-xuoc.html
+2025-11-23 09:53:09,701 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-gaming-nitro-v-15-propanel-anv15-52-59rr.html
+2025-11-23 09:53:09,747 - INFO - DROP no_price: https://cellphones.com.vn/hub-chuyen-doi-anker-7-in-1-usb-c-a83d2.html
+2025-11-23 09:53:09,951 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-gaming-msi-mag-255f-e20-25-inch-cu-dep.html
+2025-11-23 09:53:10,092 - INFO - DROP no_price: https://cellphones.com.vn/cap-innostyle-powerflex-type-c-to-c-100w-2m-icc200.html
+2025-11-23 09:53:10,147 - INFO - DROP no_price: https://cellphones.com.vn/cu-sac-belkin-boostcharge-pro-108w-2c2a-gan-pd-pps.html
+2025-11-23 09:53:10,380 - INFO - DROP no_price: https://cellphones.com.vn/camera-hanh-dong-dji-action-5-pro-standard-cu.html
+2025-11-23 09:53:10,527 - INFO - DROP no_price: https://cellphones.com.vn/tai-nghe-chup-tai-gaming-edifier-cc300.html
+2025-11-23 09:53:10,705 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-teclast-p30-wifi-cu-dep.html
+2025-11-23 09:53:10,943 - INFO - DROP no_price: https://cellphones.com.vn/camera-thang-may-dahua-4mp-co-tieng-kem-dau-ghi.html
+2025-11-23 09:53:11,093 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-oppo-find-x9-cu-da-kich-hoat.html
+2025-11-23 09:53:11,146 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-xiaomi-poco-x7-pro-mipow-full.html
+2025-11-23 09:53:11,150 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-se-2-2024-40mm-4g-vien-nhom-day-cao-su-cu-dep.html
+2025-11-23 09:53:11,184 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-vivoboook-s-14-oled-s5406ma-pp046ws-16gb-cu-da-kich-hoat.html
+2025-11-23 09:53:11,283 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-victus-15-fa2731tx-b85lnpa-cu-da-kich-hoat.html
+2025-11-23 09:53:11,370 - INFO - DROP no_price: https://cellphones.com.vn/iphone-16-512gb-cu-dep.html
+2025-11-23 09:53:11,554 - INFO - DROP no_price: https://cellphones.com.vn/rog-xbox-ally-x-cu-dep.html
+2025-11-23 09:53:11,619 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-cyborg-15-a13vek-2089vn.html
+2025-11-23 09:53:11,750 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-lite-16-gen-2-al16-52p-572a-cu-da-kich-hoat.html
+2025-11-23 09:53:11,959 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-mophie-essentials-snap-10000mah-co-chan-dung.html
+2025-11-23 09:53:11,964 - INFO - DROP no_price: https://cellphones.com.vn/laptop-dell-inspiron-15-3530-j9xfd-cu-xuoc-can.html
+2025-11-23 09:53:12,360 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-oppo-reno14-f-cu-xuoc-can.html
+2025-11-23 09:53:12,579 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-vivobook-go-15-e1504fa-bq1150w-cu-da-kich-hoat.html
+2025-11-23 09:53:12,681 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-xiaomi-15t-mipow-soft-transparent.html
+2025-11-23 09:53:12,700 - INFO - DROP no_price: https://cellphones.com.vn/cap-hyperdrive-touch-type-c-to-lightning-30w-mfi.html
+2025-11-23 09:53:12,711 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-a07-256gb.html
+2025-11-23 09:53:12,738 - INFO - DROP no_price: https://cellphones.com.vn/cu-sac-innostyle-gocharge-20w-pd-pps-gc20.html
+2025-11-23 09:53:12,953 - INFO - DROP no_price: https://cellphones.com.vn/tay-cam-chong-rung-dji-om-7-cu-da-kich-hoat.html
+2025-11-23 09:53:13,010 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-huawei-matepad-pro-12-2-inch-cu-tray-xuoc.html
+2025-11-23 09:53:13,147 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-samsung-galaxy-tab-s10-fe-5g-cu-xuoc-can.html
+2025-11-23 09:53:13,178 - INFO - DROP no_price: https://cellphones.com.vn/tai-nghe-chup-tai-khong-day-baseus-bowie-mh1-anc.html
+2025-11-23 09:53:13,301 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-thong-minh-lg-32sr83u-w-32-inch-cu-da-kich-hoat.html
+2025-11-23 09:53:13,389 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-lenovo-tab-4gb-64gb-zaeh0147vn-kem-bao-da-cu-dep.html
+2025-11-23 09:53:13,806 - INFO - DROP no_price: https://cellphones.com.vn/loa-karaoke-xach-tay-paramax-aura.html
+2025-11-23 09:53:14,055 - INFO - DROP no_price: https://cellphones.com.vn/gia-treo-tivi-di-dong-gl-ava1800-1pg.html
+2025-11-23 09:53:14,100 - INFO - DROP no_price: https://cellphones.com.vn/camera-thang-may-dahua-2mp-co-tieng.html
+2025-11-23 09:53:14,110 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-samsung-galaxy-z-fold7-pitaka-ultra-slim.html
+2025-11-23 09:53:14,172 - INFO - DROP no_price: https://cellphones.com.vn/loa-party-alpha-works-genbeat-520.html
+2025-11-23 09:53:14,187 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-gaming-msi-g255f-25-inch-cu-dep.html
+2025-11-23 09:53:14,190 - INFO - DROP no_price: https://cellphones.com.vn/loa-party-alpha-works-genbeat-120.html
+2025-11-23 09:53:14,612 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-a26-cu-xuoc-can.html
+2025-11-23 09:53:14,716 - INFO - DROP no_price: https://cellphones.com.vn/lot-chuot-havit-hv-mp830.html
+2025-11-23 09:53:14,752 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-v15-g5-irl-83hf00byvn.html
+2025-11-23 09:53:14,769 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-thinkpad-x9-15-gen-1-21q60050vn.html
+2025-11-23 09:53:14,771 - INFO - [cellphones] Parse ok: 12, drop: 288
+2025-11-23 09:53:14,772 - INFO - Đang crawl site: thegioididong
+2025-11-23 09:59:05,515 - INFO - === Bắt đầu crawl dữ liệu laptop ===
+2025-11-23 09:59:05,515 - INFO - Đang crawl site: cellphones
+2025-11-23 09:59:09,169 - INFO - [cellphones] từ sitemap: 300 URL sản phẩm
+2025-11-23 09:59:09,289 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop (404)
+2025-11-23 09:59:09,383 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=2 (404)
+2025-11-23 09:59:09,543 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=3 (404)
+2025-11-23 09:59:09,626 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=4 (404)
+2025-11-23 09:59:09,750 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=5 (404)
+2025-11-23 09:59:09,860 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=6 (404)
+2025-11-23 09:59:09,954 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=7 (404)
+2025-11-23 09:59:10,076 - WARNING - GET non-200 or empty: https://cellphones.com.vn/laptop?p=8 (404)
+2025-11-23 09:59:10,076 - INFO - [cellphones] từ danh mục: +0 URL sản phẩm (seed: https://cellphones.com.vn/laptop/)
+2025-11-23 09:59:10,079 - INFO - [cellphones] Tổng URL ứng viên cuối: 300
+2025-11-23 09:59:11,326 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:59:11,399 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:59:12,224 - INFO - DROP no_price: https://cellphones.com.vn/cap-innostyle-digipower-type-c-to-c-pd-100w-cc1001.html
+2025-11-23 09:59:12,958 - INFO - DROP no_price: https://cellphones.com.vn/loa-party-alpha-works-genbeat-120.html
+2025-11-23 09:59:13,022 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-swift-x-ai-oled-sfx14-72g-77f9.html
+2025-11-23 09:59:13,373 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-ultra-2-2024-49mm-4g-vien-titan-day-alpine-m-cu-dep.html
+2025-11-23 09:59:13,453 - INFO - DROP no_price: https://cellphones.com.vn/loa-bluetooth-havit-sk907bt.html
+2025-11-23 09:59:13,453 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-teclast-m50-plus-cu-xuoc-can.html
+2025-11-23 09:59:13,487 - INFO - DROP no_price: https://cellphones.com.vn/router-wifi-7-tp-link-archer-be220-be3600-bang-tan-kep.html
+2025-11-23 09:59:13,510 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-robot-10000mah-15w-tich-hop-cap-type-c-rt102.html
+2025-11-23 09:59:14,576 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:59:14,721 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:59:15,055 - INFO - DROP no_price: https://cellphones.com.vn/laptop-hp-14-ep0220tu-b73vwpa-16gb-cu-tray-xuoc.html
+2025-11-23 09:59:15,413 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-honor-x9d.html
+2025-11-23 09:59:15,488 - INFO - DROP no_price: https://cellphones.com.vn/masstel-tab-10-edu-4g-cu-dep.html
+2025-11-23 09:59:15,910 - INFO - DROP no_price: https://cellphones.com.vn/op-lung-xiaomi-15t-pro-mipow-transparent-clear.html
+2025-11-23 09:59:16,326 - INFO - DROP no_price: https://cellphones.com.vn/sim-5g-viettel-5g180b-6gb-ngay.html
+2025-11-23 09:59:16,489 - INFO - DROP no_price: https://cellphones.com.vn/loa-party-alpha-works-genbeat-100.html
+2025-11-23 09:59:16,535 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-golf-10000mah-22-5w-p51.html
+2025-11-23 09:59:16,561 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-mophie-essentials-snap-10000mah-co-chan-dung.html
+2025-11-23 09:59:17,722 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:59:17,814 - WARNING - Connection pool is full, discarding connection: cellphones.com.vn. Connection pool size: 10
+2025-11-23 09:59:18,881 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-predator-triton-neo-16-ptn16-51-78jq.html
+2025-11-23 09:59:18,921 - INFO - DROP no_price: https://cellphones.com.vn/loa-bluetooth-tronsmart-trip-2-10w.html
+2025-11-23 09:59:19,071 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-tecno-spark-40-cu-dep.html
+2025-11-23 09:59:19,100 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-xiaomi-redmi-turbo-3-12gb-256gb-cu-xuoc-can.html
+2025-11-23 09:59:19,125 - INFO - DROP no_price: https://cellphones.com.vn/cap-hyperdrive-type-c-240w-40gbbps-1-2m-hd6500.html
+2025-11-23 09:59:19,372 - INFO - DROP no_price: https://cellphones.com.vn/cu-sac-innostyle-gocharge-2c1a-65w-ic65.html
+2025-11-23 09:59:19,445 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-70000mah-35w-nhieu-cong-z70se.html
+2025-11-23 09:59:20,320 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-cong-msi-pro-mp341cq-cu-dep.html
+2025-11-23 09:59:20,332 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-cuktech-10-dual-fusion-2c-9000mah-90w-ba652u.html
+2025-11-23 09:59:20,486 - INFO - DROP no_price: https://cellphones.com.vn/gia-treo-tivi-di-dong-gl-g1800-1p.html
+2025-11-23 09:59:20,651 - INFO - DROP no_price: https://cellphones.com.vn/loa-party-alpha-works-genbeat-510.html
+2025-11-23 09:59:20,655 - INFO - DROP no_price: https://cellphones.com.vn/iphone-16-256gb-cu-xuoc-can.html
+2025-11-23 09:59:20,755 - INFO - DROP no_price: https://cellphones.com.vn/noi-chien-khong-dau-gaabor-af-80t01a-6-2-lit-cu.html
+2025-11-23 09:59:20,839 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-lenovo-idea-tab-pro-kem-but-ban-phim-cu-tray-xuoc.html
+2025-11-23 09:59:20,917 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-oppo-find-x9-zeelot-solidsleek-full.html
+2025-11-23 09:59:20,994 - INFO - DROP no_price: https://cellphones.com.vn/bo-sac-baseus-enercore-2c-45w-kem-cap-usb-c-rut-gon-cj11.html
+2025-11-23 09:59:21,089 - INFO - DROP no_price: https://cellphones.com.vn/cap-hyperdrive-touch-type-c-to-lightning-30w-mfi.html
+2025-11-23 09:59:21,188 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-xiaomi-poco-x7-pro-mipow-full.html
+2025-11-23 09:59:21,589 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-coros-apex-4.html
+2025-11-23 09:59:21,850 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-tecno-camon-40-pro-8gb-256gb-cu-xuoc-can.html
+2025-11-23 09:59:21,932 - INFO - DROP no_price: https://cellphones.com.vn/cu-sac-innostyle-gocharge-20w-pd-pps-gc20.html
+2025-11-23 09:59:21,948 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-xiaomi-redmi-15c-full.html
+2025-11-23 09:59:21,996 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-samsung-galaxy-tab-a11-wifi-cu-xuoc-can.html
+2025-11-23 09:59:22,041 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-oppo-find-x8-12gb-256gb-cu-dep.html
+2025-11-23 09:59:22,215 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-yoga-slim-7-14imh9-83cv00dkvn-cu-da-kich-hoat.html
+2025-11-23 09:59:22,344 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-z-flip-7-5g-12gb-256gb-cu-tray-xuoc.html
+2025-11-23 09:59:22,396 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-swift-edge-14-ai-sfe14-51t-52kd.html
+2025-11-23 09:59:22,522 - INFO - DROP no_price: https://cellphones.com.vn/laptop-dell-inspiron-15-3530-j9xfd-cu-xuoc-can.html
+2025-11-23 09:59:22,659 - INFO - DROP no_price: https://cellphones.com.vn/macbook-air-13-m4-10cpu-10gpu-24gb-512gb-2025-70w-ch-cu-dkh.html
+2025-11-23 09:59:22,731 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-venture-14-ai-a1mg-005vn-cu-da-kich-hoat.html
+2025-11-23 09:59:23,013 - INFO - DROP no_price: https://cellphones.com.vn/sim-5g-viettel-12t5g180b-6gb-ngay.html
+2025-11-23 09:59:23,281 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-teclast-p30-wifi-cu-dep.html
+2025-11-23 09:59:23,285 - INFO - DROP no_price: https://cellphones.com.vn/may-in-laser-mau-brother-dcp-3560cdw.html
+2025-11-23 09:59:23,322 - INFO - DROP no_price: https://cellphones.com.vn/lot-chuot-havit-hv-mp830.html
+2025-11-23 09:59:23,333 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-series-11-46mm-ch-cu-da-kich-hoat.html
+2025-11-23 09:59:23,470 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-huawei-matepad-pro-12-2-inch-cu-tray-xuoc.html
+2025-11-23 09:59:23,567 - INFO - DROP no_price: https://cellphones.com.vn/cu-sac-belkin-boostcharge-pro-108w-2c2a-gan-pd-pps.html
+2025-11-23 09:59:23,772 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-dinh-vi-tre-em-myalo-k64-cu-tray-xuoc.html
+2025-11-23 09:59:23,905 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-cyborg-15-a13vek-2089vn.html
+2025-11-23 09:59:23,910 - INFO - DROP no_price: https://cellphones.com.vn/may-tinh-bang-huawei-matepad-11-5-inch-6gb-128gb-khong-ban-phim.html
+2025-11-23 09:59:23,991 - INFO - DROP no_price: https://cellphones.com.vn/apple-macbook-air-15-m4-10cpu-10gpu-24gb-512gb-2025-ch-cu-dkh.html
+2025-11-23 09:59:24,036 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-tecno-spark-40-pro-plus-8gb-256gb-cu-dep.html
+2025-11-23 09:59:24,471 - INFO - DROP no_price: https://cellphones.com.vn/camera-thang-may-dahua-2mp-co-tieng.html
+2025-11-23 09:59:24,831 - INFO - DROP no_price: https://cellphones.com.vn/laptop-acer-aspire-go-14-ai-ag14-71m-57wr-cu-da-kich-hoat.html
+2025-11-23 09:59:24,832 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-innostyle-magslim-premium-10-000mah-ims10.html
+2025-11-23 09:59:24,878 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-loq-15iax9e-83lk0079vn-cu-dep.html
+2025-11-23 09:59:24,913 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-oppo-a5i-4gb-128gb-cu-dep.html
+2025-11-23 09:59:24,947 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-gaming-msi-mag-255f-e20-25-inch-cu-dep.html
+2025-11-23 09:59:25,097 - INFO - DROP no_price: https://cellphones.com.vn/tai-nghe-chup-tai-khong-day-baseus-bowie-mh1-anc.html
+2025-11-23 09:59:25,161 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-xiaomi-redmi-15-5g-8gb-256gb.html
+2025-11-23 09:59:25,203 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-modern-15-h-ai-c2hmg-220vn.html
+2025-11-23 09:59:25,291 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-thinkpad-e14-gen-7-21t90021va-cu-da-kich-hoat.html
+2025-11-23 09:59:25,310 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-v14-g4-iah-83fr000uvn-cu-tray-xuoc.html
+2025-11-23 09:59:25,479 - INFO - DROP no_price: https://cellphones.com.vn/pin-sac-du-phong-movespeed-magnetic-slim-10000mah-22-5w-s10plus.html
+2025-11-23 09:59:25,724 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-a07-256gb.html
+2025-11-23 09:59:26,119 - INFO - DROP no_price: https://cellphones.com.vn/apple-watch-se-2-2024-40mm-vien-nhom-day-cao-su-size-m-l-ch-cu-da-kich-hoat.html
+2025-11-23 09:59:26,188 - INFO - DROP no_price: https://cellphones.com.vn/mainboard-gigabyte-b860m-k-ddr5.html
+2025-11-23 09:59:26,318 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-dinh-vi-tre-em-wonlex-ct24-cu-tray-xuoc.html
+2025-11-23 09:59:26,340 - INFO - DROP no_price: https://cellphones.com.vn/may-cao-rau-enchen-mini-x-cu.html
+2025-11-23 09:59:26,453 - INFO - DROP no_price: https://cellphones.com.vn/ban-phim-co-aula-s2022-pro-den.html
+2025-11-23 09:59:26,527 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-samsung-galaxy-a17-4gb-128gb-cu-da-kich-hoat.html
+2025-11-23 09:59:26,589 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-coros-nomad.html
+2025-11-23 09:59:26,639 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-modern-14-f13mg-466vn-cu-da-kich-hoat.html
+2025-11-23 09:59:26,725 - INFO - DROP no_price: https://cellphones.com.vn/loa-karaoke-xach-tay-paramax-sonus.html
+2025-11-23 09:59:26,824 - INFO - DROP no_price: https://cellphones.com.vn/samsung-galaxy-watch-ultra-2025-cu-da-kich-hoat.html
+2025-11-23 09:59:27,046 - INFO - DROP no_price: https://cellphones.com.vn/man-hinh-thong-minh-lg-32sr83u-w-32-inch-cu-da-kich-hoat.html
+2025-11-23 09:59:27,253 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-thinkpad-x9-15-gen-1-21q60050vn.html
+2025-11-23 09:59:27,410 - INFO - DROP no_price: https://cellphones.com.vn/kinh-cuong-luc-xiaomi-15t-15t-pro-mipow-full.html
+2025-11-23 09:59:27,535 - INFO - DROP no_price: https://cellphones.com.vn/laptop-msi-modern-15-h-c2rmg-287vn.html
+2025-11-23 09:59:27,788 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-honor-play-10.html
+2025-11-23 09:59:27,867 - INFO - DROP no_price: https://cellphones.com.vn/may-in-laser-mau-brother-hl-3280cdw.html
+2025-11-23 09:59:27,914 - INFO - DROP no_price: https://cellphones.com.vn/tay-cam-chong-rung-dji-om-7-cu-da-kich-hoat.html
+2025-11-23 09:59:27,918 - INFO - DROP no_price: https://cellphones.com.vn/dien-thoai-poco-x7-pro-5g-12gb-256gb-cu-xuoc-can.html
+2025-11-23 09:59:27,960 - INFO - DROP no_price: https://cellphones.com.vn/camera-ip-wifi-ngoai-troi-ezviz-h8c-pro-5mp-full-color-cu.html
+2025-11-23 09:59:28,071 - INFO - DROP no_price: https://cellphones.com.vn/laptop-lenovo-loq-essential-15irx11-83sc003rvn.html
+2025-11-23 09:59:28,108 - INFO - DROP no_price: https://cellphones.com.vn/tay-cam-chong-rung-dji-om-5-se-cu-da-kich-hoat.html
+2025-11-23 09:59:28,254 - INFO - DROP no_price: https://cellphones.com.vn/laptop-asus-tuf-gaming-a15-fa506nf-hn005w-cu-xuoc-can.html
+2025-11-23 09:59:28,551 - INFO - DROP no_price: https://cellphones.com.vn/dong-ho-thong-minh-garmin-forerunner-970-cu-da-kich-hoat.html
+2025-11-23 09:59:28,598 - INFO - DROP no_price: https://cellphones.com.vn/oppo-a5-2025-6gb-128gb-cu-dep.html
+2025-11-23 10:00:00,519 - INFO - === Bắt đầu crawl dữ liệu laptop ===
+2025-11-23 10:00:00,519 - INFO - Crawling site: cellphones
+2025-11-23 10:00:02,230 - INFO - [cellphones] tìm được 0 URL từ seed: https://cellphones.com.vn/laptop/
+2025-11-23 10:00:02,234 - INFO - [cellphones] Parse thành công: 0
+2025-11-23 10:00:02,234 - INFO - Crawling site: thegioididong
+2025-11-23 10:01:32,005 - INFO - === Bắt đầu crawl GearVN ===
+2025-11-23 10:01:32,005 - INFO - Đang crawl site: gearvn
+2025-11-23 10:03:00,806 - INFO - [gearvn] từ danh mục: +0 URL sản phẩm (seed: https://gearvn.com/collections/laptop)
+2025-11-23 10:04:05,593 - INFO - [gearvn] từ danh mục: +0 URL sản phẩm (seed: https://gearvn.com/collections/laptop-gaming)
+2025-11-23 10:04:05,594 - INFO - [gearvn] Tổng URL ứng viên cuối: 0
+2025-11-23 10:04:05,613 - INFO - [gearvn] Parse ok: 0, drop: 0
+2025-11-23 10:04:05,613 - INFO - ⚠️ Không có dữ liệu crawl được.
+2025-11-23 10:04:05,613 - INFO - === Crawl hoàn tất ===
+2025-11-23 10:34:23,389 - INFO - === Bắt đầu crawl Thế Giới Di Động ===
+2025-11-23 10:34:23,389 - INFO - Đang crawl site: thegioididong
+2025-11-23 10:36:59,872 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2023-5?page=2
+2025-11-23 10:37:28,946 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2023-8?page=1
+2025-11-23 10:38:13,887 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2024-3?page=1
+2025-11-23 10:38:56,469 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2024-5?page=1
+2025-11-23 10:39:28,440 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2024-6?page=5
+2025-11-23 10:40:13,604 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2024-9?page=5
+2025-11-23 10:40:39,547 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2024-10?page=2
+2025-11-23 10:41:06,894 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2024-11?page=3
+2025-11-23 10:41:33,963 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2024-12?page=2
+2025-11-23 10:42:03,674 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2025-2?page=1
+2025-11-23 10:42:29,327 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2025-3?page=1
+2025-11-23 10:43:01,904 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2025-4?page=5
+2025-11-23 10:43:33,593 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2025-5?page=1
+2025-11-23 10:44:10,294 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2025-6?page=3
+2025-11-23 10:44:31,015 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2025-6?page=4
+2025-11-23 10:44:51,178 - WARNING - Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.thegioididong.com', port=443): Read timed out. (read timeout=15)")': /newsitemap/sitemap-product-2025-7?page=3
+2025-11-23 10:45:04,728 - INFO - === Bắt đầu crawl Thế Giới Di Động ===
+2025-11-23 10:45:04,728 - INFO - Đang crawl site: thegioididong

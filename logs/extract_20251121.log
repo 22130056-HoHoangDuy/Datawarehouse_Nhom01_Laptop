@@ -1,0 +1,8 @@
+2025-11-21 19:53:07,611 - INFO - === BẮT ĐẦU QUÁ TRÌNH EXTRACT ===
+2025-11-21 19:53:07,611 - INFO - Đang crawl nguồn: cellphones
+2025-11-21 19:53:09,827 - INFO - [cellphones] Found 53 URLs
+2025-11-21 19:54:20,578 - INFO - Đang crawl nguồn: thegioididong
+2025-11-21 19:54:24,474 - INFO - [thegioididong] Found 120 URLs
+2025-11-21 19:55:14,468 - INFO - Đang crawl nguồn: gearvn
+2025-11-21 19:55:19,337 - INFO - [gearvn] Found 21 URLs
+2025-11-21 19:55:30,996 - INFO - Hoàn tất EXTRACT, tổng 1 sản phẩm → data_output\raw_laptop_20251121_195530.csv

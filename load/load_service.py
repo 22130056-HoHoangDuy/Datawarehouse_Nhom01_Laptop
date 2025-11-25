@@ -1,70 +1,111 @@
 # load_service.py
-# FLOW 3.4.1 – Service chính điều phối toàn bộ quá trình LOAD
+import os
+import logging
+from datetime import datetime
+import pandas as pd
 
 from load.db_connect import mysql_connect
 from load.schema import ensure_schema
 from load.dim_loader import upsert_dim, upsert_dim_time
 from load.fact_loader import load_fact_sales
-from load.load_logger import logger
-import pandas as pd
 
-def run_load(df: pd.DataFrame):
-    if df is None or df.empty:
-        logger.error("FLOW 3.4.0: DataFrame rỗng → không thực hiện load")
-        return 0
+# ==== IMPORT LOG CONTROL ====
+from control.log_store import (
+    start_process,
+    log_success,
+    log_fail,
+    get_latest_status
+)
 
-    logger.info("="*60)
-    logger.info("FLOW 3.4.1: BẮT ĐẦU QUÁ TRÌNH LOAD")
-    logger.info(f"Số bản ghi nhận được: {len(df):,}")
-    logger.info("="*60)
+LOG_DIR = "logs"
+os.makedirs(LOG_DIR, exist_ok=True)
 
-    conn = None
-    cur = None
+def _build_logger():
+    logger = logging.getLogger("load")
+    if logger.handlers:
+        return logger
+    logger.setLevel(logging.INFO)
+
+    logfile = os.path.join(LOG_DIR, f"load_{datetime.now().strftime('%Y%m%d')}.log")
+    fh = logging.FileHandler(logfile, encoding="utf-8")
+    fh.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+
+    sh = logging.StreamHandler()
+    sh.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+
+    logger.addHandler(fh)
+    logger.addHandler(sh)
+    return logger
+
+logger = _build_logger()
+
+
+def run_load(clean_csv_path: str):
+    """
+    Load vào Data Warehouse:
+        - Kiểm tra Transform success
+        - Ghi log vào db.control
+        - Tải dim + fact
+    """
+
+    # ===========================================
+    # 🔥 1. Check Transform trước
+    # ===========================================
+    prev_status = get_latest_status("transform")
+    if prev_status != "success":
+        logger.error("⛔ Transform chưa success (status=%s) → Load KHÔNG CHẠY", prev_status)
+        raise RuntimeError("Load bị chặn vì Transform thất bại.")
+
+    # ===========================================
+    # 🔥 2. Log START vào db.control
+    # ===========================================
+    log_id = start_process("load", "Load started")
+    logger.info("=== BẮT ĐẦU LOAD ===")
+
     try:
-        # FLOW 3.4.4 - 3.4.5: kết nối DB
-        conn = mysql_connect()
-        cur = conn.cursor()
+        if not os.path.exists(clean_csv_path):
+            raise FileNotFoundError(f"File clean CSV không tồn tại: {clean_csv_path}")
 
-        # FLOW 3.4.7: đảm bảo schema
+        df = pd.read_csv(clean_csv_path)
+        logger.info("Đọc %d dòng sạch để load DW", len(df))
+
+        conn = mysql_connect()
         ensure_schema(conn)
 
-        # FLOW 3.4.8 - 3.4.16: upsert dimensions
-        logger.info("FLOW 3.4.8: UPSERT Dimensions...")
-        brands = sorted({str(x).strip().upper() for x in df["brand"] if pd.notna(x)})
-        sources = sorted({str(x).strip().lower() for x in df["source"] if pd.notna(x)})
-        products = sorted({str(x).strip() for x in df["product_name"] if pd.notna(x)})
+        with conn.cursor() as cur:
+            # ====== Load DIM ======
+            logger.info("Upsert DIM...")
+            brand_ids = upsert_dim(cur, "dim_brand", "brand_name", df["brand"].astype(str).str.upper().unique())
+            source_ids = upsert_dim(cur, "dim_source", "source_name", df["source"].astype(str).str.lower().unique())
+            product_ids = upsert_dim(cur, "dim_product", "product_name", df["product_name"].astype(str).unique())
 
-        brand_ids = upsert_dim(cur, "dim_brand", "brand_name", brands)
-        source_ids = upsert_dim(cur, "dim_source", "source_name", sources)
-        product_ids = upsert_dim(cur, "dim_product", "product_name", products)
+            date_hour_pairs = list(zip(df["crawl_date"], df["crawl_hour"]))
+            time_ids = upsert_dim_time(cur, date_hour_pairs)
 
-        time_pairs = sorted({
-            (str(d).split(" ")[0], int(h))
-            for d, h in zip(df["crawl_date"], df["crawl_hour"])
-            if pd.notna(d) and pd.notna(h)
-        })
-        time_ids = upsert_dim_time(cur, time_pairs)
+            # ====== Load FACT ======
+            logger.info("Upsert FACT...")
+            rows = load_fact_sales(cur, df, brand_ids, source_ids, product_ids, time_ids)
 
         conn.commit()
-        logger.info(f"Dimension upsert thành công: {len(brand_ids)} brand, {len(source_ids)} source, {len(product_ids)} product, {len(time_ids)} time")
+        conn.close()
 
-        # FLOW 3.4.19: load fact
-        logger.info("FLOW 3.4.19: Bắt đầu load fact_sales...")
-        rows = load_fact_sales(cur, df, brand_ids, source_ids, product_ids, time_ids)
-        conn.commit()
+        logger.info("✔ Load thành công %d dòng", rows)
+        logger.info("=== HOÀN TẤT LOAD ===")
+
+        # ===========================================
+        # 🔥 3. Log SUCCESS
+        # ===========================================
+        log_success(log_id, f"Load success: {rows} rows")
 
         logger.info(f"FLOW 3.4.21: LOAD HOÀN TẤT – {rows:,} bản ghi fact_sales")
         logger.info("="*60)
         return rows
 
-    except Exception as e:
-        logger.error(f"FLOW 3.4.23: LỖI NGHIÊM TRỌNG trong quá trình LOAD: {e}", exc_info=True)
-        if conn:
-            conn.rollback()
-            logger.info("FLOW 3.4.24: Đã rollback transaction")
-        return 0
+    except Exception as exc:
+        logger.exception("❌ Load lỗi: %s", exc)
 
-    finally:
-        if cur: cur.close()
-        if conn: conn.close()
-        logger.debug("FLOW 3.4.27: Đã đóng kết nối MySQL")
+        # ===========================================
+        # 🔥 4. Log FAIL
+        # ===========================================
+        log_fail(log_id, f"Load failed: {exc}")
+        raise

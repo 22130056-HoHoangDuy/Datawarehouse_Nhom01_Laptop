@@ -1,0 +1,50 @@
+2025-11-21 21:34:18,586 - INFO - == Discovering product URLs from AJAX API ==
+2025-11-21 21:34:18,905 - INFO - HTTP 404 https://cellphones.com.vn/categoryajax/?category=laptop&p=1
+2025-11-21 21:34:18,905 - INFO - [discover] stop at page 1 (HTTP fail)
+2025-11-21 21:34:18,905 - INFO - [DONE] Total URLs discovered: 0
+2025-11-21 21:34:18,905 - INFO - [HINTS] Listing price hints: 0
+2025-11-21 21:34:18,905 - INFO - Parsed OK: 0 / 0
+2025-11-21 21:35:07,654 - INFO - == Discovering product URLs from AJAX API ==
+2025-11-21 21:35:07,951 - INFO - HTTP 404 https://cellphones.com.vn/categoryajax/?category=laptop&p=1
+2025-11-21 21:35:07,951 - INFO - [discover] stop at page 1 (HTTP fail)
+2025-11-21 21:35:07,966 - INFO - [DONE] Total URLs discovered: 0
+2025-11-21 21:35:07,966 - INFO - [HINTS] Listing price hints: 0
+2025-11-21 21:35:07,966 - INFO - Parsed OK: 0 / 0
+2025-11-21 21:38:26,864 - INFO - == Discovering product URLs from AJAX API ==
+2025-11-21 21:38:26,864 - INFO - [discover] Page 1: requesting https://cellphones.com.vn/categoryajax/?category=laptop&p=1
+2025-11-21 21:38:27,128 - INFO - [HTTP] 404 - https://cellphones.com.vn/categoryajax/?category=laptop&p=1
+2025-11-21 21:38:27,128 - INFO - [discover] STOP page 1 (request fail)
+2025-11-21 21:38:27,129 - INFO - [DONE] Total URLs discovered: 0
+2025-11-21 21:38:27,129 - INFO - [HINTS] Listing price hints: 0
+2025-11-21 21:38:27,129 - INFO - Parsed OK: 0 / 0
+2025-11-21 21:38:27,129 - INFO - == DONE ==
+2025-11-21 21:38:35,721 - INFO - == Discovering product URLs from AJAX API ==
+2025-11-21 21:38:35,721 - INFO - [discover] Page 1: requesting https://cellphones.com.vn/categoryajax/?category=laptop&p=1
+2025-11-21 21:38:35,987 - INFO - [HTTP] 404 - https://cellphones.com.vn/categoryajax/?category=laptop&p=1
+2025-11-21 21:38:35,987 - INFO - [discover] STOP page 1 (request fail)
+2025-11-21 21:38:35,987 - INFO - [DONE] Total URLs discovered: 0
+2025-11-21 21:38:35,987 - INFO - [HINTS] Listing price hints: 0
+2025-11-21 21:38:35,987 - INFO - Parsed OK: 0 / 0
+2025-11-21 21:38:35,987 - INFO - == DONE ==
+2025-11-21 21:38:48,878 - INFO - == Discovering product URLs from AJAX API ==
+2025-11-21 21:38:48,878 - INFO - [discover] Page 1: requesting https://cellphones.com.vn/categoryajax/?category=laptop&p=1
+2025-11-21 21:38:49,375 - INFO - [HTTP] 404 - https://cellphones.com.vn/categoryajax/?category=laptop&p=1
+2025-11-21 21:38:49,375 - INFO - [discover] STOP page 1 (request fail)
+2025-11-21 21:38:49,375 - INFO - [DONE] Total URLs discovered: 0
+2025-11-21 21:38:49,375 - INFO - [HINTS] Listing price hints: 0
+2025-11-21 21:38:49,375 - INFO - Parsed OK: 0 / 0
+2025-11-21 21:38:49,376 - INFO - == DONE ==
+2025-11-21 21:40:31,955 - INFO - == Discovering product URLs + listing prices ==
+2025-11-21 21:40:34,053 - INFO - [discover] page 1: +29 links (total 29)
+2025-11-21 21:40:35,918 - INFO - [discover] page 2: +0 links (total 29)
+2025-11-21 21:40:39,463 - INFO - [discover] page 3: +0 links (total 29)
+2025-11-21 21:40:43,524 - INFO - [discover] page 4: +0 links (total 29)
+2025-11-21 21:40:47,105 - INFO - [discover] page 5: +0 links (total 29)
+2025-11-21 21:40:50,853 - INFO - [discover] page 6: +0 links (total 29)
+2025-11-21 21:40:54,921 - INFO - [discover] page 7: +0 links (total 29)
+2025-11-21 21:40:58,818 - INFO - [discover] page 8: +0 links (total 29)
+2025-11-21 21:41:02,570 - INFO - [discover] page 9: +0 links (total 29)
+2025-11-21 21:41:06,387 - INFO - [discover] page 10: +0 links (total 29)
+2025-11-21 21:41:10,023 - INFO - [discover] page 11: +0 links (total 29)
+2025-11-21 21:41:14,088 - INFO - [discover] page 12: +0 links (total 29)
+2025-11-21 21:41:17,814 - INFO - [discover] page 13: +0 links (total 29)
