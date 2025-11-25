@@ -2,37 +2,48 @@
 
 import sys, os
 
-# Thêm ROOT vào PYTHONPATH
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from extract.extract_service import run_extract
+from staging.staging_loader import load_to_staging
 from transform.transform_service import run_transform
 from load.load_service import run_load
-
+from datamart.load_mart import load_datamart
 
 def main():
     print("=== PIPELINE START ===")
 
-    # 1. Extract
+    # 1) EXTRACT
     print("\n[1] Extracting data...")
     csv_raw = run_extract()
     if not csv_raw:
-        print("Extract failed. Stopping pipeline.")
+        print("Extract failed. Pipeline stopped.")
         sys.exit(1)
 
-    # 2. Transform
-    print("\n[2] Transforming data...")
-    df_clean = run_transform(csv_raw)
+    # 2) LOAD TO STAGING
+    print("\n[2] Loading raw CSV → Staging...")
+    count = load_to_staging(csv_raw)
+    print(f"Staging loaded: {count} rows")
+
+    # 3) TRANSFORM
+    print("\n[3] Transforming data from Staging...")
+    df_clean, clean_csv_path = run_transform(csv_raw, return_output_path=True)
     if df_clean is None or len(df_clean) == 0:
-        print("Transform produced no data. Stopping pipeline.")
+        print("Transform produced no data. Pipeline stopped.")
         sys.exit(2)
 
-    # 3. Load
-    print("\n[3] Loading to Data Warehouse...")
-    rows = run_load(df_clean)
+    # 4) LOAD DATA WAREHOUSE
+    print("\n[4] Loading into Data Warehouse...")
+    rows = run_load(clean_csv_path)
     if rows <= 0:
-        print("Load failed or inserted 0 rows.")
+        print("Load failed. Pipeline stopped.")
         sys.exit(3)
+
+    print(f"Loaded {rows} rows into DW.")
+
+    # 5) LOAD DATA MART
+    print("\n[5] Building Data Marts...")
+    load_datamart()
 
     print("\n=== PIPELINE FINISHED SUCCESSFULLY ===")
     sys.exit(0)

@@ -5,18 +5,23 @@ import pandas as pd
 from datetime import datetime
 from typing import Tuple, Union
 
-import pandas as pd
-
 from transform.clean_transform import clean_dataframe
+from load.db_connect import mysql_connect   # ❗ ADD THIS
+
+# ==== IMPORT LOG CONTROL ====
+from control.log_store import (
+    start_process,
+    get_latest_status,
+    log_success,
+    log_fail
+)
 
 LOG_DIR = "logs"
 OUTPUT_DIR = "data_output"
 os.makedirs(LOG_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-
 def _build_logger() -> logging.Logger:
-    """Create a module-level logger that mirrors other pipeline logs."""
     logger = logging.getLogger("transform")
     if logger.handlers:
         return logger
@@ -34,44 +39,58 @@ def _build_logger() -> logging.Logger:
     logger.addHandler(stream_handler)
     return logger
 
-
 logger = _build_logger()
 
 
-def run_transform(csv_path: str, *, return_output_path: bool = False) -> Union[pd.DataFrame, Tuple[pd.DataFrame, str]]:
+def run_transform(csv_path: str, *, return_output_path: bool = False):
     """
-    Nhận CSV từ Extract → trả ra DataFrame sạch để Load.
-
-    Args:
-        csv_path: Đường dẫn tới file CSV raw.
-        return_output_path: Nếu True, trả về cả đường dẫn file clean đã lưu.
-
-    Returns:
-        DataFrame sạch (và đường dẫn file clean nếu `return_output_path=True`).
+    Transform dùng Staging → Clean → Clean CSV output
     """
-    if not os.path.exists(csv_path):
-        logger.error("Không tìm thấy file CSV: %s", csv_path)
-        raise FileNotFoundError(f"Không tìm thấy file CSV: {csv_path}")
 
+    # ===== 1. Kiểm tra Extract =====
+    prev = get_latest_status("extract")
+    if prev != "success":
+        logger.error("Extract chưa success (status=%s) → Transform dừng", prev)
+        raise RuntimeError("Transform bị chặn vì Extract thất bại.")
+
+    # ===== 2. Ghi log START =====
+    log_id = start_process("transform", "Transform started")
     logger.info("=== BẮT ĐẦU TRANSFORM ===")
-    logger.info("Đọc dữ liệu từ: %s", csv_path)
 
-    df = pd.read_csv(csv_path)
-    logger.info("Đọc thành công %d dòng, %d cột", len(df), len(df.columns))
+    try:
+        # ===== 3. Đọc dữ liệu từ STAGING =====
+        conn = mysql_connect()
+        df = pd.read_sql("SELECT * FROM staging_laptop_raw", conn)
+        conn.close()
 
-    df.columns = [c.strip().lower() for c in df.columns]
-    logger.debug("Tên cột chuẩn hóa: %s", df.columns.tolist())
+        logger.info("Đọc từ STAGING %d dòng", len(df))
 
-    logger.info("Bắt đầu làm sạch dữ liệu...")
-    df_clean = clean_dataframe(df)
-    logger.info("Làm sạch xong, giữ lại %d dòng hợp lệ", len(df_clean))
+        # Optional: drop cột ID nếu có
+        if "id" in df.columns:
+            df = df.drop(columns=["id"])
 
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    out_path = os.path.join(OUTPUT_DIR, f"clean_laptop_{timestamp}.csv")
-    df_clean.to_csv(out_path, index=False, encoding="utf-8-sig")
-    logger.info("Đã lưu dữ liệu sạch → %s", out_path)
-    logger.info("=== HOÀN TẤT TRANSFORM ===")
+        df.columns = [c.strip().lower() for c in df.columns]
 
-    if return_output_path:
-        return df_clean, out_path
-    return df_clean
+        # ===== 4. Clean =====
+        df_clean = clean_dataframe(df)
+        logger.info("Clean xong: %d dòng hợp lệ", len(df_clean))
+
+        # ===== 5. Ghi CSV output =====
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        out_path = os.path.join(OUTPUT_DIR, f"clean_laptop_{timestamp}.csv")
+        df_clean.to_csv(out_path, index=False, encoding="utf-8-sig")
+
+        logger.info("Lưu clean CSV → %s", out_path)
+        logger.info("=== HOÀN TẤT TRANSFORM ===")
+
+        # ===== 6. Log SUCCESS =====
+        log_success(log_id, "Transform success")
+
+        if return_output_path:
+            return df_clean, out_path
+        return df_clean
+
+    except Exception as exc:
+        logger.exception("Transform lỗi: %s", exc)
+        log_fail(log_id, f"Transform failed: {exc}")
+        raise
