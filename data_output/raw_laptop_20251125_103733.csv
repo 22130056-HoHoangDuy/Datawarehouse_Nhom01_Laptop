@@ -1,0 +1,3 @@
+﻿url,brand,product_name,price,currency,source,timestamp,sold_count
+https://example.com/thegioididong/1,TestBrand,Test Product 1,100,VND,thegioididong,2025-11-25 10:37:33,10
+https://example.com/thegioididong/2,TestBrand,Test Product 2,200,VND,thegioididong,2025-11-25 10:37:33,5
