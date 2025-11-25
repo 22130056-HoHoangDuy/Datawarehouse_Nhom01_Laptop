@@ -24,10 +24,10 @@ def clean_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     df["price"] = df["price"].apply(safe_price)
     df["sold_count"] = df["sold_count"].apply(clean_sold_count)
 
-    # Loại giá lỗi hoặc null
+    # Loại giá lỗi hoặc NaN
     df = df[df["price"].notna()].copy()
 
-    # Chuẩn hóa timestamp
+    # Chuẩn hóa timestamp → tách ngày + giờ
     ts_series = pd.to_datetime(df["timestamp"], errors="coerce")
     now = datetime.now()
     df["crawl_date"] = ts_series.dt.date.astype(str).fillna(now.date().isoformat())
@@ -36,7 +36,7 @@ def clean_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     # Loại dòng thiếu product_name
     df = df[df["product_name"].str.len() > 0]
 
-    # Reset index sau khi lọc
+    # Reset index
     df = df.reset_index(drop=True)
 
     return df

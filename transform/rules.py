@@ -33,11 +33,10 @@ def clean_sold_count(val):
         return None
 
 def safe_price(x):
-    """
-    Giá bắt buộc int > 0
-    """
     try:
-        v = int(x)
+        s = str(x).strip().replace("₫","").replace(".","").replace(",","")
+        v = int(s)
         return v if v > 0 else None
     except:
         return None
+

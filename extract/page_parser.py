@@ -4,30 +4,65 @@ import logging
 import warnings
 from bs4 import BeautifulSoup, XMLParsedAsHTMLWarning
 from datetime import datetime
+from urllib.parse import urlparse
 from extract.extract_utils import http_get, parse_price, parse_sold_number
-# Optional renderer for JS-rendered product pages
+
+# OPTIONAL renderer
 try:
     from extract.render_crawler import render_html
     PAGE_USE_RENDERER = True
-except Exception:
+except:
     render_html = None
     PAGE_USE_RENDERER = False
 
+# ===== WHITELIST BRAND =====
 BRAND_WHITELIST = {
     "dell", "asus", "acer", "hp", "lenovo", "msi", "apple", "macbook",
     "razer", "gigabyte", "huawei", "microsoft", "samsung", "xiaomi", "realme"
 }
 
-LAP_KEYWORDS = [
-    "laptop", "macbook", "notebook", "thinkpad", "vivobook",
-    "tuf", "rog", "legion", "pavilion", "zenbook", "ideapad"
+# ===== KEYWORDS MUST CONTAIN =====
+VALID_PATTERNS = [
+    "/laptop/",
+    "/laptop-",
+    "may-tinh-xach-tay",
+    "/macbook",
 ]
+
+# ===== URL NEED TO BE BLOCKED COMPLETELY =====
+BLOCKED_PATTERNS = [
+    "/hoi-dap/",
+    "/tin-tuc/",
+    "/bai-viet/",
+    "/tu-van/",
+    "/kinh-nghiem/",
+    "/tra-gop/",
+    "/khuyen-mai/",
+    "/search",
+]
+
+
+def is_valid_product_url(url: str) -> bool:
+    """Chỉ chấp nhận URL của product laptop, loại bỏ bài viết."""
+    low = url.lower()
+
+    # loại domain khác TGDD
+    if "thegioididong.com" not in low:
+        return False
+
+    # loại bài viết
+    if any(p in low for p in BLOCKED_PATTERNS):
+        return False
+
+    # phải chứa từ khóa laptop/product
+    return any(p in low for p in VALID_PATTERNS)
+
 
 def extract_jsonld(soup):
     for s in soup.find_all("script", type="application/ld+json"):
         try:
-            txt = s.string or ""
-            data = json.loads(txt.strip())
+            txt = (s.string or "").strip()
+            data = json.loads(txt)
             if isinstance(data, dict) and data.get("@type") == "Product":
                 return data
             if isinstance(data, list):
@@ -38,126 +73,113 @@ def extract_jsonld(soup):
             pass
     return None
 
+
+def normalize_brand_value(b):
+    if isinstance(b, dict):
+        return (b.get("name") or "").strip().upper()
+    if isinstance(b, list):
+        return str(b[0]).strip().upper() if b else ""
+    if isinstance(b, str):
+        return b.strip().upper()
+    return ""
+
+
 def parse_product_page(url, source):
+    # Bộ lọc URL ngay TỪ ĐẦU → tránh phí crawler
+    if not is_valid_product_url(url):
+        logging.info(f"DROP invalid_url: {url}")
+        return None
+
     r = http_get(url)
     if not r:
         return None
 
-    # Prefer lxml parser (more robust for mixed/XML-like pages); fall back to html.parser.
-    # Also silence the XMLParsedAsHTMLWarning which can be noisy for some responses.
     warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
+
     try:
         soup = BeautifulSoup(r.text, "lxml")
-    except Exception:
+    except:
         soup = BeautifulSoup(r.text, "html.parser")
+
     jd = extract_jsonld(soup)
 
-    brand, name, price, currency = "", "", None, "VND"
+    brand, name, price = "", "", None
+    currency = "VND"
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     sold_count = None
 
+    # === JSON-LD ===
     if jd:
+        brand = normalize_brand_value(jd.get("brand"))
         name = jd.get("name") or jd.get("headline") or ""
-        b = jd.get("brand")
-        if isinstance(b, dict): brand = b.get("name", "")
-        elif isinstance(b, str): brand = b
-        
+
         offers = jd.get("offers") or {}
         if isinstance(offers, dict):
             price = parse_price(str(offers.get("price") or offers.get("priceSpecification", {}).get("price")))
 
+    # === fallback title ===
     if not name:
         title = soup.find("h1") or soup.find("title")
         name = title.get_text(strip=True) if title else ""
 
+    # === PRICE extraction fallback ===
     if not price:
-        price_el = soup.select_one(".price, .product-price, .price-value, .gia, .box-price-present")
+        price_el = soup.select_one(".price, .product-price, .gia, .box-price-present")
         if price_el:
             price = parse_price(price_el.get_text(strip=True))
 
-    # Fallback: try to extract price from meta tags, data-* attributes or inline JSON/script text
+    # META tag
     if not price:
-        # meta tags
-        try:
-            m = soup.find('meta', property='product:price:amount') or soup.find('meta', attrs={'itemprop': 'price'})
-            if m and m.get('content'):
-                price = parse_price(m['content'])
-        except Exception:
-            pass
+        m = soup.find("meta", property="product:price:amount") or soup.find("meta", attrs={"itemprop": "price"})
+        if m and m.get("content"):
+            price = parse_price(m["content"])
 
+    # data-price
     if not price:
-        try:
-            el = soup.find(attrs={"data-price": True})
-            if el:
-                price = parse_price(el.get('data-price'))
-        except Exception:
-            pass
+        el = soup.find(attrs={"data-price": True})
+        if el:
+            price = parse_price(el.get("data-price"))
 
+    # script price
     if not price:
-        # search in all script tags for a price pattern (e.g. "price":12345000 or "price":"12.345.000")
-        try:
-            import re
-            scripts = soup.find_all('script')
-            txt = "\n".join([s.string or "" for s in scripts])
-            m = re.search(r'"price"\s*:\s*\"?([\d\.,]+)\"?', txt)
-            if m:
-                price = parse_price(m.group(1))
-            else:
-                # also try without quotes: price: 12345
-                m2 = re.search(r'price\s*[:=]\s*([\d\.,]+)', txt)
-                if m2:
-                    price = parse_price(m2.group(1))
-        except Exception:
-            pass
+        import re
+        txt = "\n".join([s.string or "" for s in soup.find_all("script")])
+        m = re.search(r'"price"\s*:\s*"([\d\.,]+)"', txt)
+        if m:
+            price = parse_price(m.group(1))
 
-    # If price/JSON-LD missing and Playwright renderer is available, try rendering the product page
-    if (not price or not jd) and PAGE_USE_RENDERER and "thegioididong" in url:
+    # RENDERER fallback
+    if (not price or not brand) and PAGE_USE_RENDERER and "thegioididong" in url:
         try:
             html2 = render_html(url)
             if html2:
                 soup2 = BeautifulSoup(html2, "html.parser")
-                if not jd:
-                    jd = extract_jsonld(soup2)
-                    if jd and not price:
-                        offers = jd.get("offers") or {}
-                        if isinstance(offers, dict):
-                            price = parse_price(str(offers.get("price") or offers.get("priceSpecification", {}).get("price")))
-                if not price:
-                    price_el2 = soup2.select_one(".price, .product-price, .price-value, .gia, .box-price-present")
-                    if price_el2:
-                        price = parse_price(price_el2.get_text(strip=True))
-        except Exception:
+                jd2 = extract_jsonld(soup2)
+                if jd2:
+                    brand = normalize_brand_value(jd2.get("brand"))
+                    name = jd2.get("name", name)
+                    offers = jd2.get("offers") or {}
+                    if isinstance(offers, dict):
+                        price = parse_price(str(offers.get("price")))
+        except:
             pass
 
+    # detect brand in name
     if not brand:
         for b in BRAND_WHITELIST:
-            if b.lower() in name.lower():
+            if b in name.lower():
                 brand = b.upper()
                 break
 
-    # parse sold number
-    if "thegioididong" in url:
-        el = soup.find("span", class_="quantity-sale")
-        if el: sold_count = parse_sold_number(el.get_text(strip=True))
-    elif "gearvn" in url:
-        el = soup.select_one(".product-quantity-sold, .productView-soldCount")
-        if el: sold_count = parse_sold_number(el.get_text(strip=True))
+    # SOLD COUNT (TGDD)
+    el = soup.find("span", class_="quantity-sale")
+    if el:
+        sold_count = parse_sold_number(el.get_text(strip=True))
 
+    # LOẠI SẢN PHẨM KHÔNG CÓ GIÁ
     if not price or price <= 0:
         logging.info(f"DROP no_price: {url}")
         return None
-
-    # If we have JSON-LD Product data, accept it even if name lacks keyword
-    if jd:
-        # jd exists and earlier we extracted name/brand/price from it, so accept
-        pass
-    else:
-        # allow if URL pattern clearly indicates a laptop product (TGDD)
-        has_kw = any(k in name.lower() for k in LAP_KEYWORDS)
-        sure_product = ("/laptop-" in url) or ("/may-tinh-xach-tay-" in url) or ("/laptop/" in url)
-        if not has_kw and not sure_product:
-            logging.info(f"DROP not_laptop_like: {name} ({url})")
-            return None
 
     return {
         "brand": brand,
@@ -167,5 +189,5 @@ def parse_product_page(url, source):
         "source": source,
         "url": url.strip(),
         "timestamp": timestamp,
-        "sold_count": sold_count
+        "sold_count": sold_count,
     }
