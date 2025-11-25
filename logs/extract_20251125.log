@@ -6097,3 +6097,7 @@ Call log:
 2025-11-25 16:53:48,088 - INFO - Đang crawl nguồn: thegioididong
 2025-11-25 16:53:50,021 - INFO - [thegioididong] Tổng URL hợp lệ: 0
 2025-11-25 16:53:50,022 - ERROR - KHÔNG có dữ liệu hợp lệ sau khi crawl!
+2025-11-25 16:55:56,925 - INFO - === BẮT ĐẦU QUÁ TRÌNH EXTRACT ===
+2025-11-25 16:55:56,925 - INFO - Đang crawl nguồn: thegioidididong
+2025-11-25 16:55:59,176 - INFO - [thegioidididong] Tổng URL hợp lệ: 0
+2025-11-25 16:55:59,177 - ERROR - KHÔNG có dữ liệu hợp lệ sau khi crawl!

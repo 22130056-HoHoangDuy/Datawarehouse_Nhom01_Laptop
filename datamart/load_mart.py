@@ -1,11 +1,11 @@
-# load_mart.py
 import logging
 from datetime import datetime
 import pandas as pd
 
-from load.db_connect import mysql_connect
+from load.db_connect import mysql_connect, mysql_connect_mart
 
 logger = logging.getLogger("load")
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 def ensure_mart_schema(conn):
     with conn.cursor() as cur:
@@ -43,14 +43,15 @@ def ensure_mart_schema(conn):
 
     conn.commit()
 
-
 def load_datamart():
-    conn = mysql_connect()
+    # Kết nối tới MART
+    conn = mysql_connect_mart()
     ensure_mart_schema(conn)
 
     logger.info("=== BẮT ĐẦU LOAD DATA MART ===")
 
-    # đọc fact + dim
+    # Đọc fact + dim từ DW
+    dw_conn = mysql_connect()
     df = pd.read_sql("""
         SELECT 
             f.price, f.sold_count, f.timestamp,
@@ -61,11 +62,16 @@ def load_datamart():
         JOIN dim_brand b ON f.brand_id = b.brand_id
         JOIN dim_source s ON f.source_id = s.source_id
         JOIN dim_time t ON f.time_id = t.time_id
-    """, conn)
+    """, dw_conn)
+    dw_conn.close()
+
+    # ===== Ép numeric =====
+    df["price"] = pd.to_numeric(df["price"], errors="coerce").fillna(0)
+    df["sold_count"] = pd.to_numeric(df["sold_count"], errors="coerce").fillna(0)
 
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    # ====== MART 1: BRAND SUMMARY ======
+    # ===== MART 1: BRAND SUMMARY =====
     brand_df = df.groupby("brand_name").agg(
         total_products=("price", "count"),
         avg_price=("price", "mean"),
@@ -90,7 +96,7 @@ def load_datamart():
                 now
             ))
 
-    # ====== MART 2: SOURCE SUMMARY ======
+    # ===== MART 2: SOURCE SUMMARY =====
     src_df = df.groupby("source_name").agg(
         total_products=("price", "count"),
         avg_price=("price", "mean"),
@@ -115,7 +121,7 @@ def load_datamart():
                 now
             ))
 
-    # ====== MART 3: DAILY PRICE STATS ======
+    # ===== MART 3: DAILY PRICE STATS =====
     date_df = df.groupby("crawl_date").agg(
         total_products=("price", "count"),
         avg_price=("price", "mean"),
