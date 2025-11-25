@@ -6085,3 +6085,7 @@ Call log:
 2025-11-25 16:42:42,515 - INFO - Hoàn tất crawl thegioididong: 0 URLs, 146.9s
 2025-11-25 16:42:42,515 - ERROR - KHÔNG lấy được dữ liệu!
 2025-11-25 16:42:42,516 - ERROR - Hết số lần retry.
+2025-11-25 16:48:28,701 - INFO - === BẮT ĐẦU QUÁ TRÌNH EXTRACT ===
+2025-11-25 16:48:28,702 - INFO - Đang crawl nguồn: thegioididong
+2025-11-25 16:48:30,832 - INFO - [thegioididong] Tổng URL hợp lệ: 0
+2025-11-25 16:48:30,833 - ERROR - KHÔNG có dữ liệu hợp lệ sau khi crawl!
