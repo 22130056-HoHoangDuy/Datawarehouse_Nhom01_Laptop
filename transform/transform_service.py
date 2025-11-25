@@ -1,96 +1,76 @@
-# transform_service.py
-import logging
 import os
-import pandas as pd
+import logging
 from datetime import datetime
-from typing import Tuple, Union
+import pandas as pd
 
 from transform.clean_transform import clean_dataframe
-from load.db_connect import mysql_connect   # ❗ ADD THIS
-
-# ==== IMPORT LOG CONTROL ====
-from control.log_store import (
-    start_process,
-    get_latest_status,
-    log_success,
-    log_fail
-)
+from control.log_store import start_process, log_success, log_fail
 
 LOG_DIR = "logs"
 OUTPUT_DIR = "data_output"
 os.makedirs(LOG_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-def _build_logger() -> logging.Logger:
+def _build_logger():
     logger = logging.getLogger("transform")
     if logger.handlers:
         return logger
-
     logger.setLevel(logging.INFO)
     log_path = os.path.join(LOG_DIR, f"transform_{datetime.now().strftime('%Y%m%d')}.log")
     formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-
-    file_handler = logging.FileHandler(log_path, encoding="utf-8")
-    file_handler.setFormatter(formatter)
-    logger.addHandler(file_handler)
-
-    stream_handler = logging.StreamHandler()
-    stream_handler.setFormatter(formatter)
-    logger.addHandler(stream_handler)
+    fh = logging.FileHandler(log_path, encoding="utf-8")
+    fh.setFormatter(formatter)
+    logger.addHandler(fh)
+    sh = logging.StreamHandler()
+    sh.setFormatter(formatter)
+    logger.addHandler(sh)
     return logger
 
 logger = _build_logger()
 
-
-def run_transform(csv_path: str, *, return_output_path: bool = False):
-    """
-    Transform dùng Staging → Clean → Clean CSV output
-    """
-
-    # ===== 1. Kiểm tra Extract =====
-    prev = get_latest_status("extract")
-    if prev != "success":
-        logger.error("Extract chưa success (status=%s) → Transform dừng", prev)
-        raise RuntimeError("Transform bị chặn vì Extract thất bại.")
-
-    # ===== 2. Ghi log START =====
+def run_transform(csv_path=None, *, return_output_path=False):
+    """Transform dữ liệu từ staging hoặc từ CSV."""
+    
+    # BẮT ĐẦU GHI LOG
     log_id = start_process("transform", "Transform started")
     logger.info("=== BẮT ĐẦU TRANSFORM ===")
 
     try:
-        # ===== 3. Đọc dữ liệu từ STAGING =====
-        conn = mysql_connect()
-        df = pd.read_sql("SELECT * FROM staging_laptop_raw", conn)
-        conn.close()
+        # --- 1. Đọc dữ liệu ---
+        if csv_path:
+            logger.info("Đọc CSV raw: %s", csv_path)
+            df = pd.read_csv(csv_path)
+        else:
+            raise ValueError("Transform hiện yêu cầu csv_path")
 
-        logger.info("Đọc từ STAGING %d dòng", len(df))
+        if df.empty:
+            raise ValueError("DataFrame trống, không thể transform")
 
-        # Optional: drop cột ID nếu có
+        # --- 2. Drop ID nếu có ---
         if "id" in df.columns:
             df = df.drop(columns=["id"])
 
+        # --- 3. Chuẩn hóa tên cột ---
         df.columns = [c.strip().lower() for c in df.columns]
 
-        # ===== 4. Clean =====
+        # --- 4. Clean ---
         df_clean = clean_dataframe(df)
         logger.info("Clean xong: %d dòng hợp lệ", len(df_clean))
 
-        # ===== 5. Ghi CSV output =====
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        out_path = os.path.join(OUTPUT_DIR, f"clean_laptop_{timestamp}.csv")
+        # --- 5. Xuất CSV ---
+        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+        out_path = os.path.join(OUTPUT_DIR, f"clean_laptop_{ts}.csv")
         df_clean.to_csv(out_path, index=False, encoding="utf-8-sig")
-
         logger.info("Lưu clean CSV → %s", out_path)
-        logger.info("=== HOÀN TẤT TRANSFORM ===")
 
-        # ===== 6. Log SUCCESS =====
+        # --- 6. Ghi log thành công ---
         log_success(log_id, "Transform success")
 
         if return_output_path:
             return df_clean, out_path
         return df_clean
 
-    except Exception as exc:
-        logger.exception("Transform lỗi: %s", exc)
-        log_fail(log_id, f"Transform failed: {exc}")
+    except Exception as e:
+        logger.exception("Transform thất bại: %s", e)
+        log_fail(log_id, str(e))
         raise

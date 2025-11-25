@@ -18,6 +18,21 @@ except Exception:
     def update_run(run_id, status, message=None, csv_path=None, row_count=None):
         return None
 
+# Control DB logging (shared with transform/load)
+try:
+    from control.log_store import (
+        start_process as control_start_process,
+        log_success as control_log_success,
+        log_fail as control_log_fail,
+    )
+except Exception:
+    def control_start_process(*_, **__):
+        return None
+    def control_log_success(*_, **__):
+        return None
+    def control_log_fail(*_, **__):
+        return None
+
 OUT_DIR = "data_output"
 LOG_DIR = "logs"
 os.makedirs(OUT_DIR, exist_ok=True)
@@ -63,8 +78,14 @@ def run_extract(max_retries=3, email_notify=False, email_config=None):
     if email_notify and (email_config is None) and LOCAL_DEFAULT_SMTP:
         email_config = LOCAL_DEFAULT_SMTP
 
-    # record run start in DB (if available)
+    # record run start in legacy extract DB (if available)
     run_id = start_run(attempts=0)
+    # record run start in control schema to unblock downstream stages
+    control_log_id = None
+    try:
+        control_log_id = control_start_process("extract", "Extract started")
+    except Exception as exc:
+        logging.warning(f"Không ghi được log control cho Extract: {exc}")
 
     while True:
         attempts_done += 1
@@ -146,6 +167,11 @@ def run_extract(max_retries=3, email_notify=False, email_config=None):
                         pass
             except Exception:
                 pass
+            try:
+                if control_log_id:
+                    control_log_success(control_log_id, f"Extract success: {len(df)} rows")
+            except Exception:
+                pass
             return csv_path
         except Exception as e:
             logging.error(f"Lỗi ghi file CSV (thử lần {attempts_done}): {e}")
@@ -157,6 +183,11 @@ def run_extract(max_retries=3, email_notify=False, email_config=None):
             import time; time.sleep(3)
             continue
     # Nếu quá số lần retry, gửi email nếu cấu hình
+    try:
+        if control_log_id:
+            control_log_fail(control_log_id, f"Extract failed after {attempts_done} attempts: {last_err}")
+    except Exception:
+        pass
     if email_notify and email_config:
         subject = "[Extract Pipeline] Lỗi quá số lần chạy lại"
         body = f"Pipeline extract đã chạy lại {max_retries} lần nhưng vẫn lỗi.\nLỗi cuối cùng: {last_err}"
