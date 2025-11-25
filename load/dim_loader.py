@@ -1,41 +1,57 @@
 # dim_loader.py
 ID_COLS = {
-    "dim_brand":  "brand_id",
+    "dim_brand": "brand_id",
     "dim_source": "source_id",
     "dim_product": "product_id",
 }
 
 def upsert_dim(cur, table, col, values):
     """
-    Upsert danh sách dim (brand, source, product)
+    Upsert DIM đúng chuẩn → LẤY ID CHUẨN kể cả insert hoặc existed
     """
     id_col = ID_COLS[table]
-    sql = f"""
+
+    insert_sql = f"""
         INSERT INTO {table} ({col})
         VALUES (%s)
-        ON DUPLICATE KEY UPDATE
-            {col} = VALUES({col}),
-            {id_col} = LAST_INSERT_ID({id_col})
+        ON DUPLICATE KEY UPDATE {col} = VALUES({col})
     """
 
+    select_sql = f"SELECT {id_col} FROM {table} WHERE {col}=%s"
+
     ids = {}
+
     for v in values:
-        cur.execute(sql, (v,))
-        ids[v] = cur.lastrowid
+        # luôn insert trước
+        cur.execute(insert_sql, (v,))
+        # sau đó lấy ID đúng
+        cur.execute(select_sql, (v,))
+        row = cur.fetchone()
+        ids[v] = row[id_col]
+
     return ids
+
 
 def upsert_dim_time(cur, pairs):
     """
-    pairs = [(crawl_date, crawl_hour), ...]
+    Insert hoặc lấy time_id đúng cách.
     """
-    sql = """
+    insert_sql = """
         INSERT INTO dim_time (crawl_date, crawl_hour)
         VALUES (%s, %s)
-        ON DUPLICATE KEY UPDATE
-            time_id = LAST_INSERT_ID(time_id)
+        ON DUPLICATE KEY UPDATE crawl_date = VALUES(crawl_date)
     """
+
+    select_sql = """
+        SELECT time_id FROM dim_time WHERE crawl_date=%s AND crawl_hour=%s
+    """
+
     ids = {}
+
     for d, h in pairs:
-        cur.execute(sql, (d, h))
-        ids[(d, h)] = cur.lastrowid
+        cur.execute(insert_sql, (d, h))
+        cur.execute(select_sql, (d, h))
+        row = cur.fetchone()
+        ids[(d, h)] = row["time_id"]
+
     return ids

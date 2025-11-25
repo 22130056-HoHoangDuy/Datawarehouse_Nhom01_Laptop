@@ -1,10 +1,8 @@
 # schema.py
 def ensure_schema(conn):
-    """
-    Tạo DIM + FACT theo đúng cấu trúc gốc của nhóm anh Duy.
-    """
     with conn.cursor() as cur:
-        # DIM BRAND
+
+        # ==== DIM BRAND ====
         cur.execute("""
             CREATE TABLE IF NOT EXISTS dim_brand (
                 brand_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -13,7 +11,7 @@ def ensure_schema(conn):
             ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
         """)
 
-        # DIM SOURCE
+        # ==== DIM SOURCE ====
         cur.execute("""
             CREATE TABLE IF NOT EXISTS dim_source (
                 source_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -22,7 +20,7 @@ def ensure_schema(conn):
             ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
         """)
 
-        # DIM PRODUCT
+        # ==== DIM PRODUCT ====
         cur.execute("""
             CREATE TABLE IF NOT EXISTS dim_product (
                 product_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -31,7 +29,7 @@ def ensure_schema(conn):
             ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
         """)
 
-        # DIM TIME
+        # ==== DIM TIME ====
         cur.execute("""
             CREATE TABLE IF NOT EXISTS dim_time (
                 time_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -41,7 +39,7 @@ def ensure_schema(conn):
             ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
         """)
 
-        # FACT SALES
+        # ==== FACT SALES ====
         cur.execute("""
             CREATE TABLE IF NOT EXISTS fact_sales (
                 fact_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -58,17 +56,25 @@ def ensure_schema(conn):
                 KEY(source_id),
                 KEY(time_id),
 
-                CONSTRAINT fk_product FOREIGN KEY (product_id) REFERENCES dim_product(product_id),
-                CONSTRAINT fk_brand   FOREIGN KEY (brand_id)   REFERENCES dim_brand(brand_id),
-                CONSTRAINT fk_source  FOREIGN KEY (source_id)  REFERENCES dim_source(source_id),
-                CONSTRAINT fk_time    FOREIGN KEY (time_id)    REFERENCES dim_time(time_id)
+                CONSTRAINT fk_product FOREIGN KEY (product_id)
+                    REFERENCES dim_product(product_id),
+                CONSTRAINT fk_brand FOREIGN KEY (brand_id)
+                    REFERENCES dim_brand(brand_id),
+                CONSTRAINT fk_source FOREIGN KEY (source_id)
+                    REFERENCES dim_source(source_id),
+                CONSTRAINT fk_time FOREIGN KEY (time_id)
+                    REFERENCES dim_time(time_id)
             ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
         """)
 
-        # UNIQUE GRAIN (product + source + time)
-        cur.execute("""
-            ALTER TABLE fact_sales 
-            ADD UNIQUE KEY IF NOT EXISTS uk_fact (product_id, source_id, time_id);
-        """)
+        # ---- FIX UNIQUE KEY CHUẨN ----
+        cur.execute("SHOW INDEX FROM fact_sales WHERE Key_name='uk_fact'")
+        exists = cur.fetchone()
+
+        if not exists:
+            cur.execute("""
+                ALTER TABLE fact_sales
+                ADD UNIQUE KEY uk_fact (product_id, source_id, time_id);
+            """)
 
     conn.commit()
