@@ -61,11 +61,11 @@ def load_to_staging(csv_path: str):
     df["price"] = pd.to_numeric(df["price"], errors="coerce").fillna(0).astype(int)
     df["sold_count"] = pd.to_numeric(df["sold_count"], errors="coerce").fillna(0).astype(int)
 
-    # Xử lý NaN cho toàn bộ DF → None để MySQL không chửi
+    # Xử lý NaN cho toàn bộ DF 
     df = df.replace({pd.NA: None, pd.NaT: None, "": None}).where(pd.notnull(df), None)
 
     conn = staging_connect()
-    print(f"[STAGING] Using DB: {DB_STAGING_NAME}")  # debug cho chắc
+    print(f"[STAGING] Using DB: {DB_STAGING_NAME}")
 
     ensure_staging_table(conn)
 
